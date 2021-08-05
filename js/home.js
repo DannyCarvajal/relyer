@@ -1,26 +1,3 @@
-// HOME CARROUSEL
-
-const swiper = new Swiper(".home-solutions--mobile", {
-	// Optional parameters
-	direction: "horizontal",
-	loop: true,
-	Observer: true,
-	observeParents: true,
-	slidesPerView: 1,
-
-	// Pagination
-	pagination: {
-		el: ".sp1",
-		dynamicBullets: true,
-	},
-
-	// Navigation arrows
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-});
-
 // HOME VIDEO
 
 let playButton = document.getElementsByClassName("play-button-video")[0];

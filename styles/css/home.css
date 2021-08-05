@@ -17,8 +17,11 @@ a {
 html {
   font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
   height: 2000px;
+}
+
+body {
+  overflow-x: hidden !important;
 }
 
 .button {
@@ -258,8 +261,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: auto;
-  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .home-solutions .card-solutions__card {
@@ -272,9 +274,9 @@ html {
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -319,10 +321,10 @@ html {
   }
   .home-solutions .card-solutions__container {
     white-space: unset;
-    padding: 0;
     overflow: unset;
     -ms-flex-item-align: center;
         align-self: center;
+    padding-top: 40px;
     width: 65vw;
     display: -webkit-box;
     display: -ms-flexbox;

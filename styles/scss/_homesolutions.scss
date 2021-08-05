@@ -26,8 +26,7 @@
         display: flex;
         gap: 30px;
         align-items: center;
-        overflow: auto;
-        white-space: nowrap;
+        overflow-x: auto;
 
     }
 
@@ -40,7 +39,7 @@
         opacity: 0.75;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -77,9 +76,9 @@
 
         .card-solutions__container {
             white-space: unset;
-            padding: 0;
             overflow: unset;
             align-self: center;
+            padding-top: 40px;
             width: 65vw;
             display: flex;
             flex-wrap: wrap;

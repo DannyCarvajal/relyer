@@ -18,9 +18,12 @@ html {
     // RALEWAY MAIN FONT, ENCODE SANSERIF FALLBACK FONT
     font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
     height: 2000px;
 
+}
+
+body {
+    overflow-x: hidden !important;
 }
 
 .button {
