@@ -264,14 +264,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  overflow: auto;
-  border: solid 1px black;
-  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
 }
 
 .home-solutions .card-solutions__card {
   margin-top: 45px;
   position: relative;
+  min-width: 240px;
   width: 240px;
   height: 320px;
   background: #FEFFFF;
