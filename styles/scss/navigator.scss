@@ -1,12 +1,14 @@
 @import "global";
 
 .navbar {
-    background-color: #57d2ff;
+    background-color: #4CCFFF;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    min-height: 140px;
+    height: 140px;
+    z-index: 200;
 
     /* LOGO NAVIGATOR */
     &>.navbar__img {
@@ -28,7 +30,7 @@
         left: 0;
         bottom: 0;
         opacity: 0.95;
-        z-index: 100;
+        z-index: 300;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -67,10 +69,10 @@
             }
 
             // DONT SHOW ARROW ICON 
-            & i {
-                font-size: 1.3rem;
+            & img {
                 position: relative;
-                color: white;
+                width: 20px;
+                height: 20px;
                 bottom: 2px;
                 left: 10px;
             }
@@ -113,17 +115,22 @@
 
     /* big landscape tablets, laptops, and desktops */
 
-    .navbar {
-        all: unset;
-        min-height: 115px;
-        left: 0;
+    header {
+        z-index: 1000;
+        position: sticky;
         top: 0;
+        left: 0;
+
+    }
+
+    .navbar {
+        height: 115px;
         width: 100%;
-        position: fixed;
+        background-color: #4CCFFF;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        transition: 0.3s ease-in-out;
+        // transition: 0.3s ease-in-out;
 
         // WHEN THE NAVIGATOR IS STICKY
         &.sticky {
@@ -213,14 +220,14 @@
                 }
 
                 // HIDE SIMPLE ARROW
-                .fa-sort-down {
+                .simplearrow {
                     display: none;
                 }
 
                 // SHOW DOUBLE ARROW
                 & .doublearrow {
                     position: absolute;
-                    right: 15px;
+                    left: 40%;
                     display: none;
                 }
             }
@@ -232,9 +239,10 @@
 
         /* RIGHT SIDE NAV */
         & .navbar__rightnav {
+            z-index: 200;
             position: absolute;
+            right: 20px;
             top: 35.5px;
-            right: 50px;
             display: flex;
             justify-content: space-between;
             gap: 20px;
@@ -255,6 +263,11 @@
 
                 & .login--tablet {
                     display: block;
+
+                    & img {
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
 
                 & .login--desktop {
@@ -323,6 +336,7 @@
 
         /* RIGHT SIDE NAV */
         &>.navbar__rightnav {
+            right: 50px;
 
             // LOGIN
             &>.rightnav__login {

@@ -17,8 +17,8 @@ a {
 html {
   font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   height: 2000px;
-  background-color: #41ccffde;
 }
 
 .button {
@@ -39,7 +39,7 @@ html {
 
 /*COLORS*/
 .navbar {
-  background-color: #57d2ff;
+  background-color: #4CCFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +51,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  min-height: 140px;
+  height: 140px;
+  z-index: 200;
   /* LOGO NAVIGATOR */
   /* CENTRAL LINKS NAVIGATOR */
   /* RIGHT SIDE NAV */
@@ -76,7 +77,7 @@ html {
   left: 0;
   bottom: 0;
   opacity: 0.95;
-  z-index: 100;
+  z-index: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,11 +126,11 @@ html {
   display: block;
 }
 
-.navbar .navbar__centralnav > .centralnav__services i,
-.navbar .navbar__centralnav > .centralnav__aboutus i {
-  font-size: 1.3rem;
+.navbar .navbar__centralnav > .centralnav__services img,
+.navbar .navbar__centralnav > .centralnav__aboutus img {
   position: relative;
-  color: white;
+  width: 20px;
+  height: 20px;
   bottom: 2px;
   left: 10px;
 }
@@ -165,13 +166,17 @@ html {
 
 @media (min-width: 1000px) {
   /* big landscape tablets, laptops, and desktops */
-  .navbar {
-    all: unset;
-    min-height: 115px;
-    left: 0;
+  header {
+    z-index: 1000;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
+    left: 0;
+  }
+  .navbar {
+    height: 115px;
     width: 100%;
-    position: fixed;
+    background-color: #4CCFFF;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -182,8 +187,6 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
     /* CENTRAL LINKS NAVIGATOR */
     /* RIGHT SIDE NAV */
   }
@@ -274,23 +277,24 @@ html {
   .navbar .navbar__centralnav > .centralnav__aboutus:hover > .dropdownmenu {
     display: block;
   }
-  .navbar .navbar__centralnav > .centralnav__services .fa-sort-down,
-  .navbar .navbar__centralnav > .centralnav__aboutus .fa-sort-down {
+  .navbar .navbar__centralnav > .centralnav__services .simplearrow,
+  .navbar .navbar__centralnav > .centralnav__aboutus .simplearrow {
     display: none;
   }
   .navbar .navbar__centralnav > .centralnav__services .doublearrow,
   .navbar .navbar__centralnav > .centralnav__aboutus .doublearrow {
     position: absolute;
-    right: 15px;
+    left: 40%;
     display: none;
   }
   .navbar .navbar__centralnav .login--mobile {
     display: none;
   }
   .navbar .navbar__rightnav {
+    z-index: 200;
     position: absolute;
+    right: 20px;
     top: 35.5px;
-    right: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -311,6 +315,10 @@ html {
   }
   .navbar .navbar__rightnav .rightnav__login .login--tablet {
     display: block;
+  }
+  .navbar .navbar__rightnav .rightnav__login .login--tablet img {
+    width: 20px;
+    height: 20px;
   }
   .navbar .navbar__rightnav .rightnav__login .login--desktop {
     display: none;
@@ -364,6 +372,9 @@ html {
   /* tablet, landscape iPad */
   .navbar {
     /* RIGHT SIDE NAV */
+  }
+  .navbar > .navbar__rightnav {
+    right: 50px;
   }
   .navbar > .navbar__rightnav > .rightnav__login {
     width: 232px;

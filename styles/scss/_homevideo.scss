@@ -1,0 +1,177 @@
+
+.homevideo {
+    position: relative;
+    background: linear-gradient(180deg,
+            rgba(65, 204, 255, 0.95) 0%,
+            rgba(65, 175, 255, 0.342) 100%);
+    z-index: 50;
+
+
+    &__maintitle {
+        font: 900 5.5rem $Raleway;
+        color: $darkblue;
+        padding-top: 50px;
+        padding-left: 60px;
+    }
+
+    &__description {
+        max-width: 80vw;
+        font: 300 1.8rem $Raleway;
+        color: $white;
+        padding-left: 60px;
+        text-align: justify;
+
+        &>br {
+            display: none;
+        }
+    }
+
+    &__play-button {
+        display: none;
+    }
+
+    /* BUTTON TECH LVEL */
+    &__techlevel {
+        opacity: 0;
+    }
+
+
+    .bubbles {
+        position: absolute;
+        top: 10%;
+        transform: scale(0.7);
+        height: 600px;
+        left: -15px;
+    }
+
+    .mainwave {
+        position: absolute;
+        bottom: -75px;
+    }
+
+
+}
+
+
+
+@media (min-width:800px) {
+
+    video {
+        display: none;
+    }
+
+    @keyframes rollvideo {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .homevideo {
+        position: relative;
+        background: linear-gradient(180deg,
+                rgba(65, 204, 255, 0.95) 0%,
+                rgba(65, 175, 255, 0.342) 100%);
+        z-index: 100;
+
+        // FIRST TITLES 
+        &__maintitle {
+            font: 900 7rem $Raleway;
+            padding-top: 90px;
+            padding-left: 80px;
+        }
+
+        &__description {
+            font: 300 2rem $Raleway;
+            padding-left: 80px;
+            padding-bottom: 50px;
+
+            &>br {
+                display: block;
+            }
+        }
+
+        &__play-button {
+            display: block;
+            position: absolute;
+            color: $aquamarine;
+            font-size: 8.5rem;
+            top: 130px;
+            left: 46%;
+            cursor: pointer;
+
+            &:hover {
+                transition: 0.2s;
+                transform: scale(1.09);
+            }
+        }
+
+
+        /* BUTTON TECH LEVEL */
+        & .homevideo__techlevel {
+            opacity: 1;
+            width: 350px;
+            height: 70px;
+            border-radius: 30px;
+            background-color: $secondblue;
+            position: absolute;
+            bottom: -70px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            z-index: 30;
+
+            &>p {
+                font: 400 1.25rem $Raleway;
+                color: white;
+                width: 250px;
+                text-align: center;
+
+                &>.techlevelspan {
+                    font-weight: 700;
+                    color: $darkblue;
+                }
+            }
+
+            &>.rightarrowcontainer {
+                color: $aquamarine;
+                font-size: 40px;
+                margin-left: 50px;
+                cursor: pointer;
+            }
+
+        }
+
+        .bubbles {
+            transform: none;
+            top: 30%;
+            z-index: 30;
+            height: unset;
+            left: unset;
+        }
+
+        // .connection {
+        //     position: absolute;
+        //     top: 0px;
+        //     right: 0;
+        // }
+
+    }
+
+    .mainwave {
+        position: absolute;
+        z-index: -10;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:1230px) {
+    .homevideo .play-button-video {
+        display: none;
+    }
+}
+
+@media (min-width:834px) and (max-width: 1200px) {}

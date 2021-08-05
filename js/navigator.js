@@ -11,8 +11,8 @@ navTemplate.innerHTML = `
                 <!-- SERVICES -->
                 <div class="centralnav__services">
                     <h3>Services
-                        <i class="fas fa-sort-down"></i>
-                        <i class="fas fa-angle-double-down doublearrow"></i>
+                        <img class="simplearrow" src="../assets/normalarrow.svg" alt="arrowmobile">
+                        <img class="doublearrow" src="../assets/doublearrow.svg" alt="doublearrow">
 
                     </h3>
                     <div class="dropdownmenu">
@@ -27,8 +27,8 @@ navTemplate.innerHTML = `
                 <!-- ABOUT US -->
                 <div class="centralnav__aboutus">
                     <h3>About us
-                        <i class="fas fa-sort-down"></i>
-                        <i class="fas fa-angle-double-down doublearrow"></i>
+                        <img class="simplearrow" src="../assets/normalarrow.svg" alt="arrowmobile">
+                        <img class="doublearrow" src="../assets/doublearrow.svg" alt="doublearrow">
                     </h3>
                     <div class="dropdownmenu">
                         <a href="./aboutus.html" class="aboutus__knowus">Know us</a>
@@ -86,7 +86,6 @@ const firstspan = hamburguer.firstElementChild;
 const secondspan = hamburguer.firstElementChild.nextElementSibling;
 const thirdspan = hamburguer.lastElementChild;
 const responsivenav = document.getElementsByClassName("navbar__centralnav")[0];
-
 let contadornav = 0;
 
 window.addEventListener("scroll", () => {
@@ -107,7 +106,7 @@ function containeranimation(quit) {
 		);
 		secondspan.setAttribute(
 			"style",
-			"transition:1s; transform: rotate(-45deg) ; transform: translate-y(10px) ;background-color: white;"
+			"transition:1s; transform: rotate(-45deg) ;background-color: white;"
 		);
 		thirdspan.setAttribute("style", "display:none;");
 		responsivenav.setAttribute("style", "transition:1s; transform: none;");
@@ -116,10 +115,19 @@ function containeranimation(quit) {
 		firstspan.setAttribute("style", " transition:1s;transform: none;");
 		secondspan.setAttribute("style", "transition:1s; transform: none;");
 		thirdspan.setAttribute("style", "transition:2s; display:block;");
-		responsivenav.setAttribute(
-			"style",
-			"transition:1s; transform: translateX(-100%);"
-		);
+		// IF YOU ARE IN MOBILE YOU SEE AN ANIMATION OTHERWISE YOU DONT
+		if (window.innerWidth < 990) {
+			responsivenav.setAttribute(
+				"style",
+				"transition:1s; transform: translateX(-100%);"
+			);
+		} else {
+			responsivenav.setAttribute(
+				"style",
+				"transition:0s; transform: translateX(-100%);"
+			);
+		}
+
 		contadornav = 0;
 	}
 }

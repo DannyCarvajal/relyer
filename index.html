@@ -12,11 +12,13 @@
         content="digital, transformation, tech, company, entrepreneurship, Protalento, Relyer, digitalize company ">
     <link rel="icon" href="./assets/relyer-icon.svg">
     <!-- STYLES -->
-    <link rel="stylesheet" href="./styles/css/navigator.css">
-    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="./styles/css/navigator.min.css">
+    <link rel="stylesheet" href="./styles/css/home.min.css">
+    <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/a2ed2fdecb.js" crossorigin="anonymous"></script>
     <!-- SCRIPTS -->
     <script src="./js/navigator.js" defer></script>
+    <script src="./js/homevideo.js" defer></script>
 
     <title>Relyer</title>
 </head>
@@ -37,8 +39,8 @@
                 <!-- SERVICES -->
                 <div class="centralnav__services">
                     <h3>Services
-                        <i class="fas fa-sort-down"></i>
-                        <i class="fas fa-angle-double-down doublearrow"></i>
+                        <img class="simplearrow" src="./assets/normalarrow.svg" alt="arrowmobile">
+                        <img class="doublearrow" src="./assets/doublearrow.svg" alt="doublearrow">
 
                     </h3>
                     <div class="dropdownmenu">
@@ -53,8 +55,8 @@
                 <!-- ABOUT US -->
                 <div class="centralnav__aboutus">
                     <h3>About us
-                        <i class="fas fa-sort-down"></i>
-                        <i class="fas fa-angle-double-down doublearrow"></i>
+                        <img class="simplearrow" src="./assets/normalarrow.svg" alt="arrowmobile">
+                        <img class="doublearrow" src="./assets/doublearrow.svg" alt="doublearrow">
                     </h3>
                     <div class="dropdownmenu">
                         <a href="./html/aboutus.html" class="aboutus__knowus">Know us</a>
@@ -69,7 +71,9 @@
                 <!-- LOGIN -->
                 <div class="rightnav__login button">
                     <a class="login--desktop" href="./html/login.html">Login/Register</a>
-                    <a class="login--tablet" href="./html/login.html"> <i class="fas fa-sign-in-alt"></i></a>
+                    <a class="login--tablet" href="./html/login.html">
+                        <img src="./assets/signin.svg" alt="Sign in">
+                    </a>
 
                 </div>
                 <!-- CHANGE LANGUAGE -->
@@ -88,6 +92,58 @@
             </div>
         </nav>
     </header>
+    <!-- END NAVBAR -->
+
+    <!-- START HOMELAND VIDEO -->
+    <main class="homevideo">
+        <h1 class="homevideo__maintitle">Relyer</h1>
+        <p class="homevideo__description">We are the connection between <br>
+            the micro-entrepreneurs and <br>
+            technological, organizational & <br>
+            cultural solutions and methods
+        </p>
+        <div class="homevideo__play-button">
+            <img class="play-button-video" src="./assets/playcircle.svg" alt="Play Video">
+        </div>
+        <!-- <img class="connection" src="./assets/connection.svg" alt="connection"> -->
+        <div class="homevideo__techlevel">
+            <p>Know the <span class="techlevelspan"> tech level</span> <br> of your company</p>
+
+            <a href="html/test.html" class="rightarrowcontainer">
+                <i class="fas fa-arrow-circle-right"></i>
+            </a>
+        </div>
+
+        <img class="bubbles" src="./assets/bubbles.svg" alt="Bubbles">
+
+    </main>
+    <img class="mainwave" src="./assets/wave.jpg" alt="Wave">
+    <!-- FINISH LANDHOME VIDEO -->
+
+    <!-- START HOME SOLUTIONS -->
+    <section class="home-solutions">
+
+        <h2 class="home-solutions__title">Our solutions</h2>
+        <p>Tech and innovation are our right hand</p>
+
+        <div class="card-solutions__container">
+            <div class="card-solutions__card experts">
+                <img src="./assets/cardexperts.svg" alt="Experts">
+                <h3 class="card-solutionstitle ">Experts</h3>
+            </div>
+            <div class="card-solutions__card tech">
+                <img src="./assets/cardtech.svg" alt="Tech">
+                <h3 class="card-solutionstitle ">Tech</h3>
+            </div>
+            <div class="card-solutions__card resources">
+                <img src="./assets/cardresources.svg" alt="Resources">
+                <h3 class="card-solutionstitle ">Resources</h3>
+            </div>
+        </div>
+
+    </section>
+    <!-- FINISH HOME SOLUTIONS-->
+
 
 
 
