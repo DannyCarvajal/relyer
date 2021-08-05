@@ -250,7 +250,9 @@ body {
   max-width: 90vw;
 }
 
-.home-solutions .card-solutions__container {
+.home-solutions > .card-solutions__container {
+  height: 100%;
+  width: 100%;
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding: 20px 20px;
@@ -258,11 +260,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow-x: auto;
-  white-space: nowrap;
+  overflow: auto;
+  border: solid 1px black;
+  -webkit-overflow-scrolling: touch;
 }
 
 .home-solutions .card-solutions__card {

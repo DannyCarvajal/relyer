@@ -20,14 +20,19 @@
         max-width: 90vw;
     }
 
-    & .card-solutions__container {
+    &>.card-solutions__container {
+        height: 100%;
+        width: 100%;
         align-self: flex-start;
         padding: 20px 20px;
+        // position: relative;
         display: flex;
         gap: 30px;
-        align-items: center;
-        overflow-x: auto;
-        white-space: nowrap;
+        // align-items: center;
+        overflow: auto;
+        // white-space: nowrap;
+        border: solid 1px black;
+        -webkit-overflow-scrolling: touch;
 
     }
 
