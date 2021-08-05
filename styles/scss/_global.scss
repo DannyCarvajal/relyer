@@ -25,10 +25,9 @@ html {
 body {
     overflow-x: hidden;
 }
-
-.bodyWrapper {
-    overflow-x: hidden;
-}
+// .bodyWrapper {
+    //     overflow-x: hidden;
+    // }
 
 .button {
     height: 44px;
@@ -75,8 +74,9 @@ sans-serif;
 $NavText: 1.25rem;
 $MainTitle: 7rem;
 $P: 2rem;
-$Subtitle: 5rem;
+$Subtitle: 4rem;
 
 // SIZE TEXT MOBILE
 $MainTitleMobile: 5.5rem;
 $PMobile: 1.8rem;
+$SubtitleMobile: 3rem;

@@ -24,10 +24,6 @@ body {
   overflow-x: hidden;
 }
 
-.bodyWrapper {
-  overflow-x: hidden;
-}
-
 .button {
   height: 44px;
   border-radius: 20px;
@@ -221,6 +217,7 @@ body {
 }
 
 .home-solutions {
+  max-width: 100vw;
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,7 +246,7 @@ body {
 
 .home-solutions p {
   margin-top: 20px;
-  font: 300 1.5rem/50px "Raleway", sans-serif;
+  font: 300 1.5rem/35px "Raleway", sans-serif;
   text-align: center;
   max-width: 90vw;
 }
@@ -365,10 +362,10 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .home-solutions h2 {
-    font: 800 4.3rem "Raleway", sans-serif;
+  .home-solutions > .home-solutions__title {
+    font: 800 4rem "Raleway", sans-serif;
   }
-  .home-solutions p {
+  .home-solutions > p {
     font: 300 2rem/50px "Raleway", sans-serif;
   }
   .home-solutions .card-solutions__container {
@@ -376,5 +373,118 @@ body {
   }
   .home-solutions .card-solutions__card {
     margin-top: 0;
+  }
+}
+
+.how-it-works {
+  /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
+}
+
+.how-it-works h2 {
+  font: 700 3rem "Raleway", sans-serif;
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.how-it-works > .how-it-works__container {
+  padding-top: 0;
+  /* GENERAL STYLES FOR ALL OF THEM */
+  /* EACH OF THE SECTIONS */
+}
+
+.how-it-works > .how-it-works__container > .how-it-works__item {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.how-it-works > .how-it-works__container > .how-it-works__item > h3 {
+  font: 800 3.2rem "Raleway", sans-serif;
+  color: #6E80EC;
+  padding-top: 100px;
+}
+
+.how-it-works > .how-it-works__container > .how-it-works__item > p {
+  font: 400 1.7rem/40px "Raleway", sans-serif;
+}
+
+.how-it-works > .how-it-works__container > .how-it-works__item .numbers {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.how-it-works > .how-it-works__container .spiderwhite,
+.how-it-works > .how-it-works__container .readingwhite,
+.how-it-works > .how-it-works__container .chesswhite {
+  display: block;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  margin: 0 auto;
+  z-index: -10;
+}
+
+.how-it-works > .how-it-works__container > .identify {
+  background: linear-gradient(90.9deg, rgba(170, 224, 253, 0.63) -3.59%, rgba(117, 141, 236, 0.53) 99.23%);
+}
+
+.how-it-works > .how-it-works__container > .learn {
+  background: -webkit-gradient(linear, right top, left top, color-stop(7.09%, #b4f0e0), to(rgba(223, 243, 240, 0.09)));
+  background: linear-gradient(270deg, #b4f0e0 7.09%, rgba(223, 243, 240, 0.09) 100%);
+}
+
+.how-it-works > .how-it-works__container > .apply {
+  background: linear-gradient(270.45deg, rgba(170, 224, 253, 0.63) 10.17%, rgba(117, 141, 236, 0.53) 90.03%);
+}
+
+@media (min-width: 1200px) {
+  .how-it-works {
+    position: relative;
+    /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
+  }
+  .how-it-works h2 {
+    text-align: start;
+    margin-left: 100px;
+    margin-top: 100px;
+    font: 400 4rem "Raleway", sans-serif;
+    color: #1A3256;
+    z-index: 50;
+  }
+  .how-it-works h2 > span {
+    font-weight: 700;
+  }
+  .how-it-works > .how-it-works__container {
+    /* GENERAL STYLES FOR ALL OF THEM */
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item {
+    background: white;
+    opacity: 1;
+    height: 200px;
+    text-align: unset;
+    margin: 0px 0px 100px 120px;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item > h3 {
+    font: 800 3.5rem "Raleway", sans-serif;
+    padding: 0;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item > p {
+    margin-top: 10px;
+    font: 400 2rem/40px "Raleway", sans-serif;
+    color: #010913;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item > .numbers {
+    position: absolute;
+    top: -15px;
+    left: -100px;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item > .number2 {
+    position: absolute;
+    top: -15px;
+    left: 400px;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item.learn > h3 {
+    margin-left: 240px;
   }
 }
