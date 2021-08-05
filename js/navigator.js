@@ -1,0 +1,137 @@
+/*-------- APPEND NAVIGATOR, RESPONSIVE, NAV BUTTONS, TRANSITIONS--------- */
+
+/*TEMPLATE FOR THE NAVIGATOR */
+let navTemplate = document.createElement("template");
+navTemplate.innerHTML = `
+			<img class="navbar__img" src="../assets/relyer-logo.svg" alt="Relyer Logo">
+            <!-- CENTRAL LINKS NAVIGATOR -->
+            <div class="navbar__centralnav">
+                <!-- HOME -->
+                <a href="../index.html" class="centralnav__home">Home</a>
+                <!-- SERVICES -->
+                <div class="centralnav__services">
+                    <h3>Services
+                        <i class="fas fa-sort-down"></i>
+                        <i class="fas fa-angle-double-down doublearrow"></i>
+
+                    </h3>
+                    <div class="dropdownmenu">
+                        <a class=" services__experts" href="./experts.html">Experts &
+                            Tools</a>
+                        <a href="./test.html" class="services__test">Diagnosis
+                            Test</a>
+                    </div>
+                </div>
+                <!-- LEARN -->
+                <a href="./learn.html">Learn</a>
+                <!-- ABOUT US -->
+                <div class="centralnav__aboutus">
+                    <h3>About us
+                        <i class="fas fa-sort-down"></i>
+                        <i class="fas fa-angle-double-down doublearrow"></i>
+                    </h3>
+                    <div class="dropdownmenu">
+                        <a href="./aboutus.html" class="aboutus__knowus">Know us</a>
+                        <a href="./contact.html" class="aboutus__contact">Contact</a>
+                    </div>
+                </div>
+                <!-- LOGIN REGISTER -->
+                <a class="login--mobile" href="./login.html">Login/Register</a>
+            </div>
+            <!-- RIGHT SIDE LINKS NAVIGATOR -->
+            <div class="navbar__rightnav">
+                <!-- LOGIN -->
+                <div class="rightnav__login button">
+                    <a class="login--desktop" href="./login.html">Login/Register</a>
+                    <a class="login--tablet" href="./login.html"> <i class="fas fa-sign-in-alt"></i></a>
+                </div>
+                <!-- CHANGE LANGUAGE -->
+                <div class="rightnav__changelang button">
+                    <img class="changelang__enflag" src="../assets/en-flag.svg" alt="United States flag">
+                    <h2 class="changelang__title">English</h2>
+                    <ul class="changelang__options">
+                        <li class="changelang__lang selected">English</li>
+                        <li class="changelang__lang">Spanish</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- HAMBURGUER MENU FOR MOBILE -->
+            <div class="hamburguer">
+                <span></span><span></span><span></span>
+            </div>
+
+    `;
+/*  NAV CONTAINER */
+const navContainer = document.getElementsByTagName("nav")[0];
+
+if (document.body.id !== "home") navContainer.appendChild(navTemplate.content);
+
+/* STICKY NAV */
+window.addEventListener("scroll", () => {
+	navContainer.classList.toggle("sticky", window.scrollY > 0);
+});
+
+/*  GO TO HOME ON LOGO */
+let relyerlogo = document.getElementsByClassName("navbar__img")[0];
+
+relyerlogo.addEventListener("click", () => {
+	if (document.body.id !== "home") location.href = "../index.html";
+});
+
+// MOBILE
+
+/*HAMBURGUER RESPONSIVE*/
+const hamburguer = document.getElementsByClassName("hamburguer")[0];
+const firstspan = hamburguer.firstElementChild;
+const secondspan = hamburguer.firstElementChild.nextElementSibling;
+const thirdspan = hamburguer.lastElementChild;
+const responsivenav = document.getElementsByClassName("navbar__centralnav")[0];
+
+let contadornav = 0;
+
+window.addEventListener("scroll", () => {
+	if (hamburguer) {
+		containeranimation(true);
+	}
+});
+
+hamburguer.addEventListener("click", () => {
+	containeranimation(false);
+});
+
+function containeranimation(quit) {
+	if (contadornav == 0 && quit === false) {
+		firstspan.setAttribute(
+			"style",
+			" transition:1s;transform: rotate(45deg) translateY(9px) translateX(9.4px); background-color: white;"
+		);
+		secondspan.setAttribute(
+			"style",
+			"transition:1s; transform: rotate(-45deg) ; transform: translate-y(10px) ;background-color: white;"
+		);
+		thirdspan.setAttribute("style", "display:none;");
+		responsivenav.setAttribute("style", "transition:1s; transform: none;");
+		contadornav = 1;
+	} else {
+		firstspan.setAttribute("style", " transition:1s;transform: none;");
+		secondspan.setAttribute("style", "transition:1s; transform: none;");
+		thirdspan.setAttribute("style", "transition:2s; display:block;");
+		responsivenav.setAttribute(
+			"style",
+			"transition:1s; transform: translateX(-100%);"
+		);
+		contadornav = 0;
+	}
+}
+
+// DROPDPWN MENU MOBILE
+
+const servicesContainer = document.querySelector(".centralnav__services");
+const aboutusContainer = document.querySelector(".centralnav__aboutus");
+
+servicesContainer.addEventListener("click", activeClass);
+aboutusContainer.addEventListener("click", activeClass);
+
+function activeClass(e) {
+	e.target.nextElementSibling.classList.toggle("active");
+}
