@@ -18,19 +18,19 @@
         font: 300 1.5rem/50px $Raleway;
         text-align: center;
         max-width: 90vw;
-
-
     }
 
     & .card-solutions__container {
         margin-top: 40px;
-        width: 90vw;
+        width: fit-content;
         margin-bottom: 170px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         gap: 25px;
+        justify-content: flex-start;
         align-items: center;
+        overflow: scroll;
+        overflow-x: visible;
+
     }
 
     .card-solutions__card {
@@ -67,6 +67,10 @@
 
         }
     }
+
+    /* .home-solutions--desktop {
+    display: none;
+} */
 }
 
 @media (min-width:800px) {
@@ -74,8 +78,17 @@
         margin-top: 300px;
 
         .card-solutions__container {
+            width: 65vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
             flex-direction: row;
         }
+
+        /*         .home-solutions--mobile {
+            display: none;
+        } */
     }
 }
 
@@ -92,6 +105,11 @@
             font: 300 2rem/50px $Raleway;
         }
 
+
+        .card-solutions__container {
+            width: 90vw;
+
+        }
 
         .card-solutions__card {
             margin-top: 0;

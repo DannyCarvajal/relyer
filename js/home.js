@@ -1,10 +1,41 @@
-let playbutton = document.getElementsByClassName("play-button-video")[0];
+// HOME CARROUSEL
 
-playbutton.addEventListener("click", () => {
+const swiper = new Swiper(".home-solutions--mobile", {
+	// Optional parameters
+	direction: "horizontal",
+	loop: true,
+	Observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+
+	// Pagination
+	pagination: {
+		el: ".sp1",
+		dynamicBullets: true,
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});
+
+// HOME VIDEO
+
+let playButton = document.getElementsByClassName("play-button-video")[0];
+let playButtonResponsive = document.getElementsByClassName(
+	"play-button-video--responsive"
+)[0];
+
+playButton.addEventListener("click", playVideo);
+playButtonResponsive.addEventListener("click", playVideo);
+
+function playVideo() {
 	let bg = document.createElement("div");
 	bg.setAttribute(
 		"style",
-		`position:absolute;
+		`position:fixed;
         inset: 0;
         z-index:1000;
         background-color: rgba(0, 0, 0, 0.678);
@@ -42,4 +73,4 @@ playbutton.addEventListener("click", () => {
 		document.documentElement.setAttribute("style", "overflow-y:unset;");
 	};
 	returnMaxButton.addEventListener("click", closeMax);
-});
+}

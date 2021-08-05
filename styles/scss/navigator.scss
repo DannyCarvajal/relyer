@@ -44,7 +44,7 @@
             width: 100vw;
             cursor: pointer;
             text-align: center;
-            font-size: 1.3rem;
+            font-size: $NavText;
             display: block;
             color: white;
             padding: 30px 20px;
@@ -81,6 +81,20 @@
             & .doublearrow {
                 display: none;
             }
+        }
+
+        & .centralnav__language--mobile {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            padding: 10px 10px;
+
+            & img {
+                cursor: pointer;
+
+            }
+
         }
     }
 
@@ -162,7 +176,6 @@
 
             & a,
             & h3 {
-                font-size: 1.3rem;
                 font-weight: 700;
                 width: 10vw;
                 min-width: 130px;
@@ -209,7 +222,7 @@
                         height: fit-content;
                         min-height: 30px;
                         padding: 0;
-                        font: 500 1.15rem/28px "Raleway";
+                        font: 500 1.25rem/28px "Raleway";
                     }
                 }
 
@@ -235,6 +248,10 @@
             & .login--mobile {
                 display: none;
             }
+
+            & .centralnav__language--mobile {
+                display: none;
+            }
         }
 
         /* RIGHT SIDE NAV */
@@ -249,7 +266,8 @@
 
             // LOGIN
             & .rightnav__login {
-                font: 900 1.4rem/20px "Raleway";
+                font: 900 1.25rem/20px "Raleway";
+
                 color: rgba(245, 245,
                         245,
                         0.829);
@@ -281,13 +299,8 @@
                 background-color: $bluecontrast;
 
                 & .changelang__title {
-                    font: 700 1.15rem/15px "Raleway";
+                    font: 700 1.25rem/15px "Raleway";
                     color: white;
-                }
-
-                & .changelang__enflag {
-                    width: 60px;
-                    height: 40px;
                 }
 
                 &:hover {
@@ -310,7 +323,7 @@
                 & .changelang__lang {
                     background-color: #708ddcdc;
                     height: 32px;
-                    font: 500 1.15rem/28px "Raleway";
+                    font: 500 1.25rem/28px "Raleway";
                     color: white;
                     border-radius: 4px;
                     text-align: center;

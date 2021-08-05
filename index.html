@@ -14,11 +14,15 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="./styles/css/navigator.min.css">
     <link rel="stylesheet" href="./styles/css/home.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/a2ed2fdecb.js" crossorigin="anonymous"></script>
+    <!-- CARROUSEL -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- SCRIPTS -->
     <script src="./js/navigator.js" defer></script>
-    <script src="./js/homevideo.js" defer></script>
+    <script src="./js/home.js" defer></script>
 
     <title>Relyer</title>
 </head>
@@ -65,6 +69,13 @@
                 </div>
                 <!-- LOGIN REGISTER -->
                 <a class="login--mobile" href="./html/login.html">Login/Register</a>
+
+                <div class="centralnav__language--mobile">
+                    <img width="60" height="40" class="changelang__enflag changelang__lang selected"
+                        src="./assets/en-flag.svg" alt="United States flag">
+                    <img width="60" height="40" class="changelang__enflag changelang__lang" src="./assets/es-flag.svg"
+                        alt="Spanish Flag">
+                </div>
             </div>
             <!-- RIGHT SIDE LINKS NAVIGATOR -->
             <div class="navbar__rightnav">
@@ -78,7 +89,8 @@
                 </div>
                 <!-- CHANGE LANGUAGE -->
                 <div class="rightnav__changelang button">
-                    <img class="changelang__enflag" src="./assets/en-flag.svg" alt="United States flag">
+                    <img width="60" height="40" class="changelang__enflag" src="./assets/en-flag.svg"
+                        alt="United States flag">
                     <h2 class="changelang__title">English</h2>
                     <ul class="changelang__options">
                         <li class="changelang__lang selected">English</li>
@@ -100,7 +112,8 @@
         <p class="homevideo__description">We are the connection between <br>
             the micro-entrepreneurs and <br>
             technological, organizational & <br>
-            cultural solutions and methods
+            cultural solutions and methods <br>
+            <button class="play-button-video--responsive button">Play video</button>
         </p>
         <div class="homevideo__play-button">
             <img class="play-button-video" src="./assets/playcircle.svg" alt="Play Video">
@@ -126,10 +139,10 @@
         <h2 class="home-solutions__title">Our solutions</h2>
         <p>Tech and innovation are our right hand</p>
 
-        <div class="card-solutions__container">
-            <div class="card-solutions__card experts">
-                <img src="./assets/cardexperts.svg" alt="Experts">
-                <h3 class="card-solutionstitle ">Experts</h3>
+        <div class="card-solutions__container home-solutions--desktop">
+            <div class="card-solutions__card diagnosis">
+                <img src="./assets/cardtest.svg" alt="Resources">
+                <h3 class="card-solutionstitle ">Diagnosis</h3>
             </div>
             <div class="card-solutions__card tech">
                 <img src="./assets/cardtech.svg" alt="Tech">
@@ -139,12 +152,43 @@
                 <img src="./assets/cardresources.svg" alt="Resources">
                 <h3 class="card-solutionstitle ">Resources</h3>
             </div>
+            <div class="card-solutions__card experts">
+                <img src="./assets/cardexperts.svg" alt="Experts">
+                <h3 class="card-solutionstitle ">Experts</h3>
+            </div>
         </div>
 
+        <!-- <div class="swiper-container home-solutions--mobile" id="slider"> -->
+        <!-- Additional required wrapper -->
+        <!-- <div class="swiper-wrapper card-solutions__container"> -->
+        <!-- Slides -->
+        <!-- <div class="card-solutions__card diagnosis"> -->
+        <!-- <img src="./assets/cardtest.svg" alt="Resources"> -->
+        <!-- <h3 class="card-solutionstitle ">Diagnosis</h3> -->
+        <!-- </div> -->
+        <!-- <div class="card-solutions__card tech"> -->
+        <!-- <img src="./assets/cardtech.svg" alt="Tech"> -->
+        <!-- <h3 class="card-solutionstitle ">Tech</h3> -->
+        <!-- </div> -->
+        <!-- <div class="card-solutions__card resources"> -->
+        <!-- <img src="./assets/cardresources.svg" alt="Resources"> -->
+        <!-- <h3 class="card-solutionstitle ">Resources</h3> -->
+        <!-- </div> -->
+        <!-- <div class="card-solutions__card experts"> -->
+        <!-- <img src="./assets/cardexperts.svg" alt="Experts"> -->
+        <!-- <h3 class="card-solutionstitle ">Experts</h3> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- If we need pagination -->
+        <!-- <div class="slidercontrols sp1 swiper-pagination"></div> -->
+        <!-- If we need navigation buttons -->
+        <!-- <div class="slidercontrols swiper-button-prev"></div> -->
+        <!-- <div class="slidercontrols swiper-button-next"></div> -->
+
+        <!-- </div> -->
+        <!-- FINISH HOME SOLUTIONS-->
+
     </section>
-    <!-- FINISH HOME SOLUTIONS-->
-
-
 
 
 
