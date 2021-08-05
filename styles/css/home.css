@@ -265,6 +265,22 @@ body {
   display: flex;
   gap: 30px;
   overflow-x: auto;
+  /* Track */
+  /* Handle */
+}
+
+.home-solutions > .card-solutions__container::-webkit-scrollbar {
+  width: 40vw;
+  height: 3.7px;
+}
+
+.home-solutions > .card-solutions__container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.home-solutions > .card-solutions__container::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
 }
 
 .home-solutions .card-solutions__card {

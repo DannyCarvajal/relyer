@@ -25,12 +25,26 @@
         width: 100%;
         align-self: flex-start;
         padding: 20px 20px;
-        // position: relative;
         display: flex;
         gap: 30px;
-        // align-items: center;
         overflow-x: auto;
-        // white-space: nowrap;
+
+        &::-webkit-scrollbar {
+            width: 40vw;
+            height: 3.7px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: gray;
+            border-radius: 10px;
+        }
+
 
     }
 
