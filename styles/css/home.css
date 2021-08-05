@@ -248,6 +248,12 @@ html {
 }
 
 .home-solutions .card-solutions__container {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: 40px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -256,15 +262,14 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 25px;
+  gap: 30px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: scroll;
-  overflow-x: visible;
+  overflow-x: scroll;
 }
 
 .home-solutions .card-solutions__card {

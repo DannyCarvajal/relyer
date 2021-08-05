@@ -21,15 +21,17 @@
     }
 
     & .card-solutions__container {
+        align-self: flex-start;
+        margin-left: 30px;
+        height: fit-content;
         margin-top: 40px;
         width: fit-content;
         margin-bottom: 170px;
         display: flex;
-        gap: 25px;
+        gap: 30px;
         justify-content: flex-start;
         align-items: center;
-        overflow: scroll;
-        overflow-x: visible;
+        overflow-x: scroll;
 
     }
 
