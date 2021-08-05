@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 .button {
@@ -262,6 +262,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   overflow-x: auto;
+  white-space: nowrap;
 }
 
 .home-solutions .card-solutions__card {
