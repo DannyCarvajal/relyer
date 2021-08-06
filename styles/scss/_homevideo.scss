@@ -54,10 +54,11 @@
         left: -15px;
     }
 
-    .mainwave>img {
+    .mainwave>picture>img {
         position: absolute;
         bottom: -75px;
         overflow: hidden;
+        width: 100vw;
     }
 
 
@@ -167,7 +168,7 @@
 
     }
 
-    .mainwave>img {
+    .mainwave>picture>img {
         position: absolute;
         z-index: -10;
         width: 100vw;

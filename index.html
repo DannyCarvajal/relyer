@@ -131,7 +131,14 @@
 
         </main>
         <div class="mainwave">
-            <img src="./assets/wave.jpg" alt="Wave">
+            <picture>
+                <source media="(min-width: 800px)" srcset="./assets/wave.jpg">
+
+                <source media="(min-width: 200px)" srcset="./assets/wavemobile.jpg">
+
+                <img src="./assets/wavemobile.jpg" alt="GFG">
+            </picture>
+            <!-- <img src="./assets/wave.jpg" alt="Wave"> -->
         </div>
         <!-- FINISH LANDHOME VIDEO -->
 
