@@ -17,7 +17,7 @@ a {
 html {
   font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
   scroll-behavior: smooth;
-  height: 2000px;
+  height: 4000px;
   overflow-x: hidden;
 }
 
@@ -228,9 +228,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* .home-solutions--desktop {
-    display: none;
-} */
 }
 
 .home-solutions .home-solutions__title {
@@ -330,9 +327,6 @@ html {
 @media (min-width: 800px) {
   .home-solutions {
     margin-top: 50px;
-    /*         .home-solutions--mobile {
-            display: none;
-        } */
   }
   .home-solutions .card-solutions__container {
     white-space: unset;
@@ -438,17 +432,26 @@ html {
 @media (min-width: 1200px) {
   .how-it-works {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
     /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
   }
   .how-it-works .wavy {
-    width: 100vw;
+    width: 105vw;
+    top: 50px;
     position: absolute;
+    left: -30px;
     z-index: -10;
   }
   .how-it-works h2 {
     text-align: start;
-    margin-left: 100px;
-    margin-top: 100px;
+    margin: 120px 0 130px 100px;
     font: 400 4rem "Raleway", sans-serif;
     color: #1A3256;
     z-index: 50;
@@ -457,14 +460,22 @@ html {
     font-weight: 700;
   }
   .how-it-works > .how-it-works__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* GENERAL STYLES FOR ALL OF THEM */
   }
   .how-it-works > .how-it-works__container > .how-it-works__item {
+    position: relative;
     background: unset;
     opacity: 1;
     height: 200px;
     text-align: unset;
-    margin: 0px 0px 100px 120px;
+    margin: 0px 0px 30px 120px;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item > h3 {
     font: 800 3.5rem "Raleway", sans-serif;
@@ -485,16 +496,143 @@ html {
     top: -15px;
     left: 400px;
   }
+  .how-it-works > .how-it-works__container > .how-it-works__item.learn {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 120px;
+  }
   .how-it-works > .how-it-works__container > .how-it-works__item.learn > h3 {
     margin-left: 240px;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item .spiderwhite,
   .how-it-works > .how-it-works__container > .how-it-works__item .readingwhite,
   .how-it-works > .how-it-works__container > .how-it-works__item .chesswhite {
-    display: block;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-    margin: 0 auto;
-    z-index: -10;
+    position: absolute;
+    top: -25px;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item .spiderwhite,
+  .how-it-works > .how-it-works__container > .how-it-works__item .chesswhite {
+    left: 28vw;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item .readingwhite {
+    right: 28vw;
+  }
+}
+
+.allies {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* SLIDER */
+}
+
+.allies > .allies__title {
+  margin-top: 30px;
+  font: 800 3rem "Raleway", sans-serif;
+  text-align: center;
+}
+
+.allies__slider {
+  background: white;
+  width: 100%;
+  margin-top: 25px;
+  padding: 25px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: relative;
+  /* X - Y - BLUR -SPREAD */
+  -webkit-box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.125);
+          box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.125);
+  margin-top: 50px;
+}
+
+.allies__slider::before, .allies__slider::after {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.158)), to(rgba(255, 255, 255, 0.007)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.158) 0%, rgba(255, 255, 255, 0.007) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 400px;
+  z-index: 2;
+}
+
+.allies__slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.allies__slider::before {
+  left: 0;
+  top: 0;
+}
+
+.allies__slider .slidertrack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  width: calc(400px *7);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: infiniteCarrousel 20s linear infinite;
+          animation: infiniteCarrousel 20s linear infinite;
+}
+
+.allies__slider .slidertrack > img {
+  margin: 0 100px;
+}
+
+@-webkit-keyframes infiniteCarrousel {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-3066.5px);
+            transform: translateX(-3066.5px);
+  }
+}
+
+@keyframes infiniteCarrousel {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-3066.5px);
+            transform: translateX(-3066.5px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .allies > .allies > .allies__title {
+    font: 800 4rem "Raleway", sans-serif;
+  }
+  .allies__slider::before, .allies__slider::after {
+    background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   }
 }

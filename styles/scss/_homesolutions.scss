@@ -47,7 +47,6 @@
             border-radius: 10px;
         }
 
-
     }
 
     .card-solutions__card {
@@ -87,9 +86,6 @@
         }
     }
 
-    /* .home-solutions--desktop {
-    display: none;
-} */
 }
 
 @media (min-width:800px) {
@@ -109,9 +105,6 @@
             flex-direction: row;
         }
 
-        /*         .home-solutions--mobile {
-            display: none;
-        } */
     }
 }
 
@@ -128,7 +121,6 @@
             font: 300 2rem/50px $Raleway;
         }
 
-
         .card-solutions__container {
             width: 90vw;
 
@@ -137,7 +129,6 @@
         .card-solutions__card {
             margin-top: 0;
         }
-
 
     }
 
