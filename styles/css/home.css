@@ -21,10 +21,6 @@ html {
   overflow-x: hidden;
 }
 
-.bodyWrapper {
-  overflow-x: hidden;
-}
-
 .button {
   height: 44px;
   border-radius: 20px;
@@ -101,11 +97,6 @@ html {
   position: absolute;
   width: 100%;
   overflow-x: hidden;
-}
-
-.homevideo .mainwave > img {
-  position: absolute;
-  bottom: -75px;
   min-width: 100%;
 }
 
@@ -207,8 +198,6 @@ html {
   }
   .mainwave {
     overflow: hidden;
-  }
-  .mainwave > img {
     position: absolute;
     z-index: -10;
     min-width: 100%;
