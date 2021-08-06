@@ -29,176 +29,182 @@
 
 <body id="home">
 
-    <!-- WE ARE RELYER, WE HOPE YOU LIKE THE PROJECT, IT WAS A PLEASURE TO BE PART OF IT  -->
-    <header>
-        <!-- NAVIGATOR START HERE -->
-        <nav class="navbar">
-            <!-- LEFT SIDE LOGO NAV -->
-            <img class="navbar__img" src="./assets/relyer-logo.svg" alt="Relyer Logo">
-            <!-- CENTRAL LINKS NAVIGATOR -->
-            <div class="navbar__centralnav">
-                <!-- HOME -->
-                <a href="#!" class="centralnav__home">Home</a>
-                <!-- SERVICES -->
-                <div class="centralnav__services">
-                    <h3>Services
-                        <img class="simplearrow" src="./assets/normalarrow.svg" alt="arrowmobile">
-                        <img class="doublearrow" src="./assets/doublearrow.svg" alt="doublearrow">
+    <div class="bodyWrapper">
+        <!-- WE ARE RELYER, WE HOPE YOU LIKE THE PROJECT, IT WAS A PLEASURE TO BE PART OF IT  -->
+        <header>
+            <!-- NAVIGATOR START HERE -->
+            <nav class="navbar">
+                <!-- LEFT SIDE LOGO NAV -->
+                <img class="navbar__img" src="./assets/relyer-logo.svg" alt="Relyer Logo">
+                <!-- CENTRAL LINKS NAVIGATOR -->
+                <div class="navbar__centralnav">
+                    <!-- HOME -->
+                    <a href="#!" class="centralnav__home">Home</a>
+                    <!-- SERVICES -->
+                    <div class="centralnav__services">
+                        <h3>Services
+                            <img class="simplearrow" src="./assets/normalarrow.svg" alt="arrowmobile">
+                            <img class="doublearrow" src="./assets/doublearrow.svg" alt="doublearrow">
 
-                    </h3>
-                    <div class="dropdownmenu">
-                        <a class=" services__experts" href="./html/experts.html">Experts &
-                            Tools</a>
-                        <a href="./html/test.html" class="services__test">Diagnosis
-                            Test</a>
+                        </h3>
+                        <div class="dropdownmenu">
+                            <a class=" services__experts" href="./html/experts.html">Experts &
+                                Tools</a>
+                            <a href="./html/test.html" class="services__test">Diagnosis
+                                Test</a>
+                        </div>
+                    </div>
+                    <!-- LEARN -->
+                    <a href="./html/learn.html">Learn</a>
+                    <!-- ABOUT US -->
+                    <div class="centralnav__aboutus">
+                        <h3>About us
+                            <img class="simplearrow" src="./assets/normalarrow.svg" alt="arrowmobile">
+                            <img class="doublearrow" src="./assets/doublearrow.svg" alt="doublearrow">
+                        </h3>
+                        <div class="dropdownmenu">
+                            <a href="./html/aboutus.html" class="aboutus__knowus">Know us</a>
+                            <a href="./html/contact.html" class="aboutus__contact">Contact</a>
+                        </div>
+                    </div>
+                    <!-- LOGIN REGISTER -->
+                    <a class="login--mobile" href="./html/login.html">Login/Register</a>
+
+                    <div class="centralnav__language--mobile">
+                        <img width="60" height="40" class="changelang__enflag changelang__lang selected"
+                            src="./assets/en-flag.svg" alt="United States flag">
+                        <img width="60" height="40" class="changelang__enflag changelang__lang"
+                            src="./assets/es-flag.svg" alt="Spanish Flag">
                     </div>
                 </div>
-                <!-- LEARN -->
-                <a href="./html/learn.html">Learn</a>
-                <!-- ABOUT US -->
-                <div class="centralnav__aboutus">
-                    <h3>About us
-                        <img class="simplearrow" src="./assets/normalarrow.svg" alt="arrowmobile">
-                        <img class="doublearrow" src="./assets/doublearrow.svg" alt="doublearrow">
-                    </h3>
-                    <div class="dropdownmenu">
-                        <a href="./html/aboutus.html" class="aboutus__knowus">Know us</a>
-                        <a href="./html/contact.html" class="aboutus__contact">Contact</a>
+                <!-- RIGHT SIDE LINKS NAVIGATOR -->
+                <div class="navbar__rightnav">
+                    <!-- LOGIN -->
+                    <div class="rightnav__login button">
+                        <a class="login--desktop" href="./html/login.html">Login/Register</a>
+                        <a class="login--tablet" href="./html/login.html">
+                            <img src="./assets/signin.svg" alt="Sign in">
+                        </a>
+
+                    </div>
+                    <!-- CHANGE LANGUAGE -->
+                    <div class="rightnav__changelang button">
+                        <img width="60" height="40" class="changelang__enflag" src="./assets/en-flag.svg"
+                            alt="United States flag">
+                        <h2 class="changelang__title">English</h2>
+                        <ul class="changelang__options">
+                            <li class="changelang__lang selected">English</li>
+                            <li class="changelang__lang">Spanish</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- LOGIN REGISTER -->
-                <a class="login--mobile" href="./html/login.html">Login/Register</a>
+                <!-- HAMBURGUER MENU FOR MOBILE -->
+                <div class="hamburguer">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </header>
+        <!-- END NAVBAR -->
 
-                <div class="centralnav__language--mobile">
-                    <img width="60" height="40" class="changelang__enflag changelang__lang selected"
-                        src="./assets/en-flag.svg" alt="United States flag">
-                    <img width="60" height="40" class="changelang__enflag changelang__lang" src="./assets/es-flag.svg"
-                        alt="Spanish Flag">
+        <!-- START HOMELAND VIDEO -->
+        <main class="homevideo">
+            <h1 class="homevideo__maintitle">Relyer</h1>
+            <p class="homevideo__description">We are the connection between <br>
+                the micro-entrepreneurs and <br>
+                technological, organizational & <br>
+                cultural solutions and methods <br>
+                <button class="play-button-video--responsive button">Play video</button>
+            </p>
+            <div class="homevideo__play-button">
+                <img class="play-button-video" src="./assets/playcircle.svg" alt="Play Video">
+            </div>
+            <!-- <img class="connection" src="./assets/connection.svg" alt="connection"> -->
+            <div class="homevideo__techlevel">
+                <p>Know the <span class="techlevelspan"> tech level</span> <br> of your company</p>
+
+                <a href="html/test.html" class="rightarrowcontainer">
+                    <i class="fas fa-arrow-circle-right"></i>
+                </a>
+            </div>
+
+            <img class="bubbles" src="./assets/bubbles.svg" alt="Bubbles">
+
+        </main>
+        <div class="mainwave">
+            <img src="./assets/wave.jpg" alt="Wave">
+        </div>
+        <!-- FINISH LANDHOME VIDEO -->
+
+        <!-- START HOME SOLUTIONS -->
+        <section class="home-solutions">
+
+            <h2 class="home-solutions__title">Our solutions</h2>
+            <p>Tech and innovation are our right hand</p>
+
+            <div class="card-solutions__container home-solutions--desktop">
+                <div class="card-solutions__card diagnosis">
+                    <img src="./assets/cardtest.svg" alt="Resources">
+                    <h3 class="card-solutionstitle ">Diagnosis</h3>
+                </div>
+                <div class="card-solutions__card tech">
+                    <img src="./assets/cardtech.svg" alt="Tech">
+                    <h3 class="card-solutionstitle ">Tech</h3>
+                </div>
+                <div class="card-solutions__card resources">
+                    <img src="./assets/cardresources.svg" alt="Resources">
+                    <h3 class="card-solutionstitle ">Resources</h3>
+                </div>
+                <div class="card-solutions__card experts">
+                    <img src="./assets/cardexperts.svg" alt="Experts">
+                    <h3 class="card-solutionstitle ">Experts</h3>
                 </div>
             </div>
-            <!-- RIGHT SIDE LINKS NAVIGATOR -->
-            <div class="navbar__rightnav">
-                <!-- LOGIN -->
-                <div class="rightnav__login button">
-                    <a class="login--desktop" href="./html/login.html">Login/Register</a>
-                    <a class="login--tablet" href="./html/login.html">
-                        <img src="./assets/signin.svg" alt="Sign in">
-                    </a>
+        </section>
+        <!-- FINISH HOME SOLUTIONS-->
 
+        <!--  -->
+        <section class="how-it-works">
+
+            <!-- <img class="wavy" src="./assets/bgwavy.svg" alt="wavy"> -->
+
+            <h2 class="how-it-works__title">How does it <span>work?</span> </h2>
+
+            <!-- HOW IT WORKS CONTAINER -->
+            <div class="how-it-works__container">
+
+                <div class="how-it-works__item identify">
+                    <img class="numbers number1" src="./assets/number1.svg" alt="number1">
+                    <h3>Identify</h3>
+                    <p>You can either find possible <br>
+                        issues by yourself or with our <br>
+                        diagnosis</p>
+                    <img width="230" height="auto" class="spiderwhite" src="./assets/spiderwhite.svg" alt="spiderwhite">
                 </div>
-                <!-- CHANGE LANGUAGE -->
-                <div class="rightnav__changelang button">
-                    <img width="60" height="40" class="changelang__enflag" src="./assets/en-flag.svg"
-                        alt="United States flag">
-                    <h2 class="changelang__title">English</h2>
-                    <ul class="changelang__options">
-                        <li class="changelang__lang selected">English</li>
-                        <li class="changelang__lang">Spanish</li>
-                    </ul>
+
+                <div class="how-it-works__item learn">
+                    <img class="numbers number2" src="./assets/number2.svg" alt="number2">
+                    <h3>Learn</h3>
+                    <p>Discover how tech tools and <br>
+                        methodologies can take you <br>
+                        the next level with experts <br>
+                        guide</p>
+                    <img width="230" height="auto" class="readingwhite" src="./assets/readingwhite.svg"
+                        alt="readingwhite">
                 </div>
+
+                <div class="how-it-works__item apply">
+                    <img class="numbers number3" src="./assets/number3.svg" alt="number3">
+                    <h3>Apply</h3>
+                    <p> Use the concepts learnt and <br>
+                        see the expansion of your <br>
+                        company/ business </p>
+                    <img width="230" height="auto" class="chesswhite" src="./assets/chesswhite.svg" alt="chesswhite">
+                </div>
+
             </div>
-            <!-- HAMBURGUER MENU FOR MOBILE -->
-            <div class="hamburguer">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </header>
-    <!-- END NAVBAR -->
+        </section>
+    </div>
 
-    <!-- START HOMELAND VIDEO -->
-    <main class="homevideo">
-        <h1 class="homevideo__maintitle">Relyer</h1>
-        <p class="homevideo__description">We are the connection between <br>
-            the micro-entrepreneurs and <br>
-            technological, organizational & <br>
-            cultural solutions and methods <br>
-            <button class="play-button-video--responsive button">Play video</button>
-        </p>
-        <div class="homevideo__play-button">
-            <img class="play-button-video" src="./assets/playcircle.svg" alt="Play Video">
-        </div>
-        <!-- <img class="connection" src="./assets/connection.svg" alt="connection"> -->
-        <div class="homevideo__techlevel">
-            <p>Know the <span class="techlevelspan"> tech level</span> <br> of your company</p>
-
-            <a href="html/test.html" class="rightarrowcontainer">
-                <i class="fas fa-arrow-circle-right"></i>
-            </a>
-        </div>
-
-        <img class="bubbles" src="./assets/bubbles.svg" alt="Bubbles">
-
-    </main>
-    <img class="mainwave" src="./assets/wave.jpg" alt="Wave">
-    <!-- FINISH LANDHOME VIDEO -->
-
-    <!-- START HOME SOLUTIONS -->
-    <section class="home-solutions">
-
-        <h2 class="home-solutions__title">Our solutions</h2>
-        <p>Tech and innovation are our right hand</p>
-
-        <div class="card-solutions__container home-solutions--desktop">
-            <div class="card-solutions__card diagnosis">
-                <img src="./assets/cardtest.svg" alt="Resources">
-                <h3 class="card-solutionstitle ">Diagnosis</h3>
-            </div>
-            <div class="card-solutions__card tech">
-                <img src="./assets/cardtech.svg" alt="Tech">
-                <h3 class="card-solutionstitle ">Tech</h3>
-            </div>
-            <div class="card-solutions__card resources">
-                <img src="./assets/cardresources.svg" alt="Resources">
-                <h3 class="card-solutionstitle ">Resources</h3>
-            </div>
-            <div class="card-solutions__card experts">
-                <img src="./assets/cardexperts.svg" alt="Experts">
-                <h3 class="card-solutionstitle ">Experts</h3>
-            </div>
-        </div>
-    </section>
-    <!-- FINISH HOME SOLUTIONS-->
-
-    <!--  -->
-    <section class="how-it-works">
-
-        <!-- <img class="wavy" src="./assets/bgwavy.svg" alt="wavy"> -->
-
-        <h2 class="how-it-works__title">How does it <span>work?</span> </h2>
-
-        <!-- HOW IT WORKS CONTAINER -->
-        <div class="how-it-works__container">
-
-            <div class="how-it-works__item identify">
-                <img class="numbers number1" src="./assets/number1.svg" alt="number1">
-                <h3>Identify</h3>
-                <p>You can either find possible <br>
-                    issues by yourself or with our <br>
-                    diagnosis</p>
-                <img width="230" height="auto" class="spiderwhite" src="./assets/spiderwhite.svg" alt="spiderwhite">
-            </div>
-
-            <div class="how-it-works__item learn">
-                <img class="numbers number2" src="./assets/number2.svg" alt="number2">
-                <h3>Learn</h3>
-                <p>Discover how tech tools and <br>
-                    methodologies can take you <br>
-                    the next level with experts <br>
-                    guide</p>
-                <img width="230" height="auto" class="readingwhite" src="./assets/readingwhite.svg" alt="readingwhite">
-            </div>
-
-            <div class="how-it-works__item apply">
-                <img class="numbers number3" src="./assets/number3.svg" alt="number3">
-                <h3>Apply</h3>
-                <p> Use the concepts learnt and <br>
-                    see the expansion of your <br>
-                    company/ business </p>
-                <img width="230" height="auto" class="chesswhite" src="./assets/chesswhite.svg" alt="chesswhite">
-            </div>
-
-        </div>
-    </section>
 
 
 </body>
