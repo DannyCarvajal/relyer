@@ -17,7 +17,6 @@ a {
 html {
   font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
   scroll-behavior: smooth;
-  height: 4000px;
   overflow-x: hidden;
 }
 
@@ -376,6 +375,10 @@ html {
   margin: 40px 0 20px 0;
 }
 
+.how-it-works .wavy {
+  display: none;
+}
+
 .how-it-works > .how-it-works__container {
   padding-top: 0;
   /* GENERAL STYLES FOR ALL OF THEM */
@@ -443,6 +446,7 @@ html {
     /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
   }
   .how-it-works .wavy {
+    display: block;
     width: 105vw;
     top: 50px;
     position: absolute;
@@ -520,7 +524,7 @@ html {
 }
 
 .allies {
-  margin-top: 100px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,8 +565,8 @@ html {
   overflow: hidden;
   position: relative;
   /* X - Y - BLUR -SPREAD */
-  -webkit-box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.125);
-          box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.06);
   margin-top: 50px;
 }
 
@@ -634,5 +638,116 @@ html {
   .allies__slider::before, .allies__slider::after {
     background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+
+.phraseobstacles {
+  margin-top: 40px;
+  background-color: #041226;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phraseobstacles > p {
+  padding-top: 50px;
+  font: 600 1.5rem/45px "Raleway", sans-serif;
+  color: white;
+  max-width: 90vw;
+}
+
+.phraseobstacles > img {
+  padding-top: 25px;
+  width: 80vw;
+}
+
+.phraseobstacles > h3 {
+  padding: 25px 0px 50px 0px;
+  font: 400 1.5rem "Raleway", sans-serif;
+  text-align: center;
+  color: #1A3256;
+}
+
+@media (min-width: 1200px) {
+  .phraseobstacles {
+    background: #0a265e;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(10, 38, 94, 0.948463)), color-stop(43%, #041220));
+    background: linear-gradient(90deg, rgba(10, 38, 94, 0.948463) 0%, #041220 43%);
+    display: block;
+    position: relative;
+    height: 500px;
+    margin: 86px 0 0 0;
+  }
+  .phraseobstacles > p {
+    position: absolute;
+    text-align: justify;
+    font: 200 2rem/60px "Raleway", sans-serif;
+    color: white;
+    max-width: 40vw;
+    top: 80px;
+    left: 60px;
+  }
+  .phraseobstacles > img {
+    padding-top: none;
+    position: absolute;
+    width: 40vw;
+    right: 20px;
+  }
+}
+
+.tech-level {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  background-color: #41ccff;
+  margin-bottom: 40px;
+}
+
+.tech-level > h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #41ccff;
+          text-decoration-color: #41ccff;
+  font: 700 1.5rem "Raleway", sans-serif;
+  color: white;
+  max-width: 50vw;
+}
+
+.tech-level > h2 > strong {
+  color: #1A3256;
+}
+
+.tech-level > img {
+  position: relative;
+  top: 15px;
+}
+
+@media (min-width: 800px) {
+  .tech-level {
+    margin: 50px 0;
+  }
+  .tech-level > h2 {
+    max-width: 70vw;
+    letter-spacing: 0.4rem;
+  }
+  .tech-level > img {
+    cursor: pointer;
   }
 }

@@ -1,6 +1,6 @@
 .allies {
 
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +25,7 @@
         position: relative;
 
         /* X - Y - BLUR -SPREAD */
-        box-shadow: 0 0px 40px 40px rgba(0, 0, 0, .125);
+        box-shadow: 0 0px 40px 40px rgba(0, 0, 0, .06);
         margin-top: 50px;
 
         &::before,

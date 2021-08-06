@@ -1,0 +1,65 @@
+.phraseobstacles {
+    margin-top: 40px;
+    background-color: #041226;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &>p {
+        padding-top: 50px;
+        font: 600 1.5rem/45px $Raleway;
+        color: white;
+        max-width: 90vw;
+
+    }
+
+    &>img {
+        padding-top: 25px;
+        width: 80vw;
+    }
+
+    &>h3 {
+        padding: 25px 0px 50px 0px;
+        font: 400 1.5rem $Raleway;
+        text-align: center;
+        color: $darkblue;
+
+    }
+}
+
+
+
+
+
+@media (min-width:1200px) {
+
+    .phraseobstacles {
+        background: rgb(10, 38, 94);
+        background: linear-gradient(90deg, rgba(10, 38, 94, 0.9484628398766678) 0%, rgba(4, 18, 32, 1) 43%);
+        display: block;
+        position: relative;
+        height: 500px;
+        margin: 86px 0 0 0;
+
+        &>p {
+            position: absolute;
+            text-align: justify;
+            font: 200 2rem/60px $Raleway;
+            color: white;
+            max-width: 40vw;
+            top: 80px;
+            left: 60px;
+        }
+
+        &>img {
+            padding-top: none;
+            position: absolute;
+            width: 40vw;
+            right: 20px;
+        }
+    }
+
+
+
+}

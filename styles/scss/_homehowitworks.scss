@@ -6,6 +6,11 @@
         margin: 40px 0 20px 0;
     }
 
+
+    & .wavy {
+        display: none;
+    }
+
     /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
     &>.how-it-works__container {
         padding-top: 0;
@@ -73,6 +78,7 @@
         margin-top: 50px;
 
         & .wavy {
+            display: block;
             width: 105vw;
             top: 50px;
             position: absolute;
