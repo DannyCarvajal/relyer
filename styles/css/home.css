@@ -24,6 +24,12 @@ body {
   overflow-x: hidden;
 }
 
+.bodyWrapper {
+  min-width: 100vw;
+  pointer-events: none;
+  overflow-x: hidden;
+}
+
 .button {
   height: 44px;
   border-radius: 20px;
@@ -444,6 +450,11 @@ body {
     position: relative;
     /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
   }
+  .how-it-works .wavy {
+    width: 100vw;
+    position: absolute;
+    z-index: -10;
+  }
   .how-it-works h2 {
     text-align: start;
     margin-left: 100px;
@@ -459,7 +470,7 @@ body {
     /* GENERAL STYLES FOR ALL OF THEM */
   }
   .how-it-works > .how-it-works__container > .how-it-works__item {
-    background: white;
+    background: unset;
     opacity: 1;
     height: 200px;
     text-align: unset;
@@ -486,5 +497,14 @@ body {
   }
   .how-it-works > .how-it-works__container > .how-it-works__item.learn > h3 {
     margin-left: 240px;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item .spiderwhite,
+  .how-it-works > .how-it-works__container > .how-it-works__item .readingwhite,
+  .how-it-works > .how-it-works__container > .how-it-works__item .chesswhite {
+    display: block;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin: 0 auto;
+    z-index: -10;
   }
 }

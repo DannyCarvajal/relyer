@@ -25,9 +25,12 @@ html {
 body {
     overflow-x: hidden;
 }
-// .bodyWrapper {
-    //     overflow-x: hidden;
-    // }
+
+.bodyWrapper {
+    min-width: 100vw;
+    pointer-events: none;
+    overflow-x: hidden;
+}
 
 .button {
     height: 44px;

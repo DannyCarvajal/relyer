@@ -69,6 +69,12 @@
     .how-it-works {
         position: relative;
 
+        & .wavy {
+            width: 100vw;
+            position: absolute;
+            z-index: -10;
+        }
+
         h2 {
             text-align: start;
             margin-left: 100px;
@@ -88,7 +94,7 @@
 
             /* GENERAL STYLES FOR ALL OF THEM */
             &>.how-it-works__item {
-                background: white;
+                background: unset;
                 opacity: 1;
                 height: 200px;
                 text-align: unset;
@@ -118,19 +124,22 @@
                 }
 
                 &.learn {
-
                     &>h3 {
                         margin-left: 240px;
-
                     }
+                }
 
-
+                .spiderwhite,
+                .readingwhite,
+                .chesswhite {
+                    display: block;
+                    transform: scale(0.7);
+                    margin: 0 auto;
+                    z-index: -10;
                 }
 
 
             }
-
         }
     }
-
 }
