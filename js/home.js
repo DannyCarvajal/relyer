@@ -1,18 +1,8 @@
-// WAVE WIDTH
-// const waveWidth = document.getElementsByClassName("mainwave")[0];
-// window.addEventListener("resize", () => {
-// 	waveWidth.style.width = window.innerWidth;
-// 	console.log("hey this is", window.innerWidth);
-// });
-
 // HOME VIDEO
-console.log(window.innerWidth);
-let playButton = document.getElementsByClassName("play-button-video")[0];
 let playButtonResponsive = document.getElementsByClassName(
 	"play-button-video--responsive"
 )[0];
 
-playButton.addEventListener("click", playVideo);
 playButtonResponsive.addEventListener("click", playVideo);
 
 function playVideo() {

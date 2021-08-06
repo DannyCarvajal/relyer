@@ -36,7 +36,7 @@
         }
     }
 
-    &__play-button {
+    &__video--desktop {
         display: none;
     }
 
@@ -103,24 +103,18 @@
             &>br {
                 display: block;
             }
-
         }
 
-        &__play-button {
+        &__video--desktop {
             display: block;
             position: absolute;
-            color: $aquamarine;
-            font-size: 8.5rem;
-            top: 130px;
-            left: 46%;
-            cursor: pointer;
-
-            &:hover {
-                transition: 0.2s;
-                transform: scale(1.09);
-            }
+            top: 60px;
+            right: 70px;
+            z-index: 300;
+            height: 350px;
+            width: 620px;
+            border-radius: 10px;
         }
-
 
         /* BUTTON TECH LEVEL */
         & .homevideo__techlevel {
@@ -130,7 +124,7 @@
             border-radius: 30px;
             background-color: $secondblue;
             position: absolute;
-            bottom: -70px;
+            bottom: -120px;
             right: 20px;
             display: flex;
             align-items: center;
@@ -174,8 +168,17 @@
 
 @media (max-width:1230px) {
     .homevideo {
-        .play-button-video {
+        &__video--desktop {
             display: none;
+        }
+    }
+}
+
+@media (max-width:1300px) {
+
+    .homevideo {
+        &__video--desktop {
+            right: 25px;
         }
     }
 }
