@@ -54,7 +54,7 @@
         left: -15px;
     }
 
-    .mainwave {
+    .mainwave>img {
         position: absolute;
         bottom: -75px;
         overflow: hidden;
@@ -167,7 +167,7 @@
 
     }
 
-    .mainwave {
+    .mainwave>img {
         position: absolute;
         z-index: -10;
         width: 100vw;

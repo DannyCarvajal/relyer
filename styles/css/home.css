@@ -93,7 +93,7 @@ html {
   left: -15px;
 }
 
-.homevideo .mainwave {
+.homevideo .mainwave > img {
   position: absolute;
   bottom: -75px;
   overflow: hidden;
@@ -195,7 +195,7 @@ html {
     height: unset;
     left: unset;
   }
-  .mainwave {
+  .mainwave > img {
     position: absolute;
     z-index: -10;
     width: 100vw;
