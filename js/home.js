@@ -1,5 +1,5 @@
 // HOME VIDEO
-
+console.log(window.innerWidth);
 let playButton = document.getElementsByClassName("play-button-video")[0];
 let playButtonResponsive = document.getElementsByClassName(
 	"play-button-video--responsive"
