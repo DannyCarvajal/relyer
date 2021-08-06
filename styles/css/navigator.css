@@ -21,6 +21,10 @@ html {
   overflow-x: hidden;
 }
 
+.bodyWrapper {
+  overflow-x: hidden;
+}
+
 .button {
   height: 44px;
   border-radius: 20px;
