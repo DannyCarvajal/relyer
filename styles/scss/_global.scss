@@ -22,11 +22,6 @@ html {
 
 }
 
-
-// .bodyWrapper {
-//     overflow-x: hidden;
-// }
-
 .button {
     height: 44px;
     border-radius: 20px;
@@ -35,6 +30,24 @@ html {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+}
+
+@mixin scroller {
+    &::-webkit-scrollbar {
+        width: 0px;
+        height: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 10px;
+    }
 }
 
 /*COLORS*/

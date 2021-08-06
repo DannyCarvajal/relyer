@@ -334,7 +334,7 @@ html {
     -ms-flex-item-align: center;
         align-self: center;
     padding-top: 40px;
-    width: 72vw;
+    width: 65vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -351,7 +351,7 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .home-solutions > .home-solutions__title {
     font: 800 4rem "Raleway", sans-serif;
   }
@@ -382,6 +382,7 @@ html {
 
 .how-it-works > .how-it-works__container {
   padding-top: 0;
+  overflow: hidden;
   /* GENERAL STYLES FOR ALL OF THEM */
   /* EACH OF THE SECTIONS */
 }
@@ -431,6 +432,40 @@ html {
 
 .how-it-works > .how-it-works__container > .apply {
   background: linear-gradient(270.45deg, rgba(170, 224, 253, 0.63) 10.17%, rgba(117, 141, 236, 0.53) 90.03%);
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  /* tablet, landscape iPad */
+  .how-it-works {
+    /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
+  }
+  .how-it-works > .how-it-works__container {
+    overflow: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    scrollbar-width: 30vw;
+    /* Track */
+    /* Handle */
+  }
+  .how-it-works > .how-it-works__container::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+  }
+  .how-it-works > .how-it-works__container::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  .how-it-works > .how-it-works__container::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item {
+    min-width: 100vw;
+    margin: 0;
+  }
 }
 
 @media (min-width: 1200px) {

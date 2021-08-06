@@ -31,22 +31,7 @@
         overflow-x: auto;
         scrollbar-width: 30vw;
 
-        &::-webkit-scrollbar {
-            width: 0px;
-            height: 5px;
-        }
-
-        /* Track */
-        &::-webkit-scrollbar-track {
-            border-radius: 10px;
-        }
-
-        /* Handle */
-        &::-webkit-scrollbar-thumb {
-            background: gray;
-            border-radius: 10px;
-        }
-
+        @include scroller
     }
 
     .card-solutions__card {
@@ -97,7 +82,7 @@
             overflow: unset;
             align-self: center;
             padding-top: 40px;
-            width: 72vw;
+            width: 65vw;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -109,7 +94,7 @@
 }
 
 
-@media (min-width:1200px) {
+@media (min-width:1300px) {
 
     .home-solutions {
 

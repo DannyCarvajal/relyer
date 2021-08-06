@@ -13,6 +13,7 @@
     /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
     &>.how-it-works__container {
         padding-top: 0;
+        overflow: hidden;
 
         /* GENERAL STYLES FOR ALL OF THEM */
         &>.how-it-works__item {
@@ -64,7 +65,30 @@
     }
 }
 
+@media (min-width:800px) and (max-width: 1200px) {
+    /* tablet, landscape iPad */
 
+    .how-it-works {
+
+        /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
+        &>.how-it-works__container {
+            overflow: unset;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            overflow-x: auto;
+            scrollbar-width: 30vw;
+            @include scroller;
+
+            &>.how-it-works__item {
+                min-width: 100vw;
+                margin: 0;
+            }
+        }
+    }
+
+
+}
 
 
 @media (min-width:1200px) {
