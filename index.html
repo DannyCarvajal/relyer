@@ -130,9 +130,12 @@
             <img class="bubbles" src="./assets/bubbles.svg" alt="Bubbles">
 
         </main>
-        <!-- <div > -->
-        <!-- <img class="mainwave" src="./assets/wave.svg" alt="Wave"> -->
-        <!-- </div> -->
+        <picture class="mainwave">
+            <source media="(min-width: 1200px)" srcset="./assets/wave.svg">
+            <source media="(min-width: 800px)" srcset="./assets/wavemedium.svg">
+            <source media="(min-width: 480px)" srcset="./assets/wavemobile.svg">
+            <img src="./assets/wavemini.svg" alt="Wave Background">
+        </picture>
 
 
 

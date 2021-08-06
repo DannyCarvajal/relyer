@@ -55,12 +55,9 @@
     }
 
     & .mainwave {
-        // position: absolute;
-        width: 100%;
         overflow-x: hidden;
-        min-width: 100%;
+        width: 100vw;
         max-width: 100%;
-
     }
 
 
@@ -171,10 +168,7 @@
     }
 
     & .mainwave {
-        overflow: hidden;
-        position: absolute;
         z-index: -10;
-        min-width: 100%;
     }
 }
 

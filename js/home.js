@@ -1,9 +1,9 @@
 // WAVE WIDTH
-const waveWidth = document.getElementsByClassName("mainwave")[0];
-window.addEventListener("resize", () => {
-	waveWidth.style.width = window.innerWidth;
-	console.log("hey this is", window.innerWidth);
-});
+// const waveWidth = document.getElementsByClassName("mainwave")[0];
+// window.addEventListener("resize", () => {
+// 	waveWidth.style.width = window.innerWidth;
+// 	console.log("hey this is", window.innerWidth);
+// });
 
 // HOME VIDEO
 console.log(window.innerWidth);
