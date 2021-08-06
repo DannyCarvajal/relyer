@@ -24,11 +24,6 @@ body {
   overflow-x: hidden;
 }
 
-.bodyWrapper {
-  min-width: 100vw;
-  overflow-x: hidden;
-}
-
 .button {
   height: 44px;
   border-radius: 20px;
