@@ -93,11 +93,12 @@ html {
   left: -15px;
 }
 
-.homevideo .mainwave > img {
+.homevideo .mainwave > picture > img {
   position: absolute;
   bottom: -75px;
   overflow: hidden;
   width: 100vw;
+  max-width: 100vw;
 }
 
 @media (min-width: 800px) {
@@ -200,7 +201,6 @@ html {
     position: absolute;
     z-index: -10;
     width: 100vw;
-    max-width: 100vw;
   }
 }
 
