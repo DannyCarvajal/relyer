@@ -334,7 +334,7 @@ html {
     -ms-flex-item-align: center;
         align-self: center;
     padding-top: 40px;
-    width: 65vw;
+    width: 72vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -348,6 +348,12 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+@media (min-width: 1180px) and (max-width: 1300px) {
+  .home-solutions .card-solutions__container {
+    width: 60vw;
   }
 }
 
@@ -679,7 +685,7 @@ html {
 
 .phraseobstacles {
   margin-top: 40px;
-  background-color: #041226;
+  background-color: #031225;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,16 +699,22 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  min-width: 100vw;
 }
 
 .phraseobstacles > p {
-  padding-top: 50px;
-  font: 600 1.5rem/45px "Raleway", sans-serif;
+  padding: 20px 0;
+  text-align: justify;
+  font: 200 1.8rem "Raleway", sans-serif;
   color: white;
-  max-width: 90vw;
+  max-width: 80vw;
 }
 
 .phraseobstacles > img {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
   padding-top: 25px;
   width: 80vw;
 }
@@ -714,30 +726,37 @@ html {
   color: #1A3256;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .phraseobstacles {
     background: #0a265e;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(10, 38, 94, 0.948463)), color-stop(43%, #041220));
-    background: linear-gradient(90deg, rgba(10, 38, 94, 0.948463) 0%, #041220 43%);
-    display: block;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(10, 38, 94, 0.948463)), color-stop(42%, #031225));
+    background: linear-gradient(90deg, rgba(10, 38, 94, 0.948463) 0%, #031225 42%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     position: relative;
     height: 500px;
-    margin: 86px 0 0 0;
+    margin: 85spx 0 0 0;
   }
   .phraseobstacles > p {
-    position: absolute;
     text-align: justify;
-    font: 200 2rem/60px "Raleway", sans-serif;
+    font: 200 2rem/50px "Raleway", sans-serif;
     color: white;
     max-width: 40vw;
-    top: 80px;
-    left: 60px;
   }
   .phraseobstacles > img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     padding-top: none;
-    position: absolute;
+    position: static;
     width: 40vw;
-    right: 20px;
   }
 }
 

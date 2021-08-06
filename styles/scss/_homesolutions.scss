@@ -82,7 +82,7 @@
             overflow: unset;
             align-self: center;
             padding-top: 40px;
-            width: 65vw;
+            width: 72vw;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -91,6 +91,21 @@
         }
 
     }
+}
+
+@media (min-width:1180px) and (max-width: 1300px) {
+
+    .home-solutions {
+
+        .card-solutions__container {
+            width: 60vw;
+
+        }
+
+
+
+    }
+
 }
 
 
