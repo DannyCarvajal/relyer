@@ -54,12 +54,17 @@
         left: -15px;
     }
 
-    .mainwave>picture>img {
-        position: absolute;
-        bottom: -75px;
+    & .mainwave {
         overflow: hidden;
-        width: 100%;
-        max-width: 100%;
+
+        & picture>img {
+
+            position: absolute;
+            bottom: -75px;
+            // width: 100%;
+            min-width: 100%;
+
+        }
     }
 
 
@@ -169,10 +174,15 @@
 
     }
 
-    .mainwave>picture>img {
-        position: absolute;
-        z-index: -10;
-        width: 100vw;
+    & .mainwave {
+        overflow: hidden;
+
+        & picture>img {
+            position: absolute;
+            z-index: -10;
+            // width: 100vw;
+            min-width: 100%;
+        }
     }
 }
 

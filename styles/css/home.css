@@ -93,12 +93,14 @@ html {
   left: -15px;
 }
 
-.homevideo .mainwave > picture > img {
+.homevideo .mainwave {
+  overflow: hidden;
+}
+
+.homevideo .mainwave picture > img {
   position: absolute;
   bottom: -75px;
-  overflow: hidden;
-  width: 100%;
-  max-width: 100%;
+  min-width: 100%;
 }
 
 @media (min-width: 800px) {
@@ -197,10 +199,13 @@ html {
     height: unset;
     left: unset;
   }
-  .mainwave > picture > img {
+  .mainwave {
+    overflow: hidden;
+  }
+  .mainwave picture > img {
     position: absolute;
     z-index: -10;
-    width: 100vw;
+    min-width: 100%;
   }
 }
 
@@ -344,7 +349,7 @@ html {
     -ms-flex-item-align: center;
         align-self: center;
     padding-top: 40px;
-    width: 65vw;
+    width: 70vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
