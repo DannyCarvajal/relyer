@@ -3,62 +3,74 @@
 /*TEMPLATE FOR THE NAVIGATOR */
 let navTemplate = document.createElement("template");
 navTemplate.innerHTML = `
-			<img class="navbar__img" src="../assets/relyer-logo.svg" alt="Relyer Logo">
-            <!-- CENTRAL LINKS NAVIGATOR -->
-            <div class="navbar__centralnav">
-                <!-- HOME -->
-                <a href="../index.html" class="centralnav__home">Home</a>
-                <!-- SERVICES -->
-                <div class="centralnav__services">
-                    <h3>Services
-                        <img class="simplearrow" src="../assets/normalarrow.svg" alt="arrowmobile">
-                        <img class="doublearrow" src="../assets/doublearrow.svg" alt="doublearrow">
+<!-- LEFT SIDE LOGO NAV -->
+<img class="navbar__img" src="../assets/relyer-logo.svg" alt="Relyer Logo">
+<!-- CENTRAL LINKS NAVIGATOR -->
+<div class="navbar__centralnav">
+    <!-- HOME -->
+    <a href="../index.html" class="centralnav__home">Home</a>
+    <!-- SERVICES -->
+    <div class="centralnav__services">
+        <h3>Services
+            <img class="simplearrow" src="../assets/normalarrow.svg" alt="arrowmobile">
+            <img class="doublearrow" src="../assets/doublearrow.svg" alt="doublearrow">
 
-                    </h3>
-                    <div class="dropdownmenu">
-                        <a class=" services__experts" href="./experts.html">Experts &
-                            Tools</a>
-                        <a href="./test.html" class="services__test">Diagnosis
-                            Test</a>
-                    </div>
-                </div>
-                <!-- LEARN -->
-                <a href="./learn.html">Learn</a>
-                <!-- ABOUT US -->
-                <div class="centralnav__aboutus">
-                    <h3>About us
-                        <img class="simplearrow" src="../assets/normalarrow.svg" alt="arrowmobile">
-                        <img class="doublearrow" src="../assets/doublearrow.svg" alt="doublearrow">
-                    </h3>
-                    <div class="dropdownmenu">
-                        <a href="./aboutus.html" class="aboutus__knowus">Know us</a>
-                        <a href="./contact.html" class="aboutus__contact">Contact</a>
-                    </div>
-                </div>
-                <!-- LOGIN REGISTER -->
-                <a class="login--mobile" href="./login.html">Login/Register</a>
-            </div>
-            <!-- RIGHT SIDE LINKS NAVIGATOR -->
-            <div class="navbar__rightnav">
-                <!-- LOGIN -->
-                <div class="rightnav__login button">
-                    <a class="login--desktop" href="./login.html">Login/Register</a>
-                    <a class="login--tablet" href="./login.html"> <i class="fas fa-sign-in-alt"></i></a>
-                </div>
-                <!-- CHANGE LANGUAGE -->
-                <div class="rightnav__changelang button">
-                    <img class="changelang__enflag" src="../assets/en-flag.svg" alt="United States flag">
-                    <h2 class="changelang__title">English</h2>
-                    <ul class="changelang__options">
-                        <li class="changelang__lang selected">English</li>
-                        <li class="changelang__lang">Spanish</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- HAMBURGUER MENU FOR MOBILE -->
-            <div class="hamburguer">
-                <span></span><span></span><span></span>
-            </div>
+        </h3>
+        <div class="dropdownmenu">
+            <a class=" services__experts" href="./experts.html">Experts &
+                Tools</a>
+            <a href="./test.html" class="services__test">Diagnosis
+                Test</a>
+        </div>
+    </div>
+    <!-- LEARN -->
+    <a href="./learn.html">Learn</a>
+    <!-- ABOUT US -->
+    <div class="centralnav__aboutus">
+        <h3>About us
+            <img class="simplearrow" src="../assets/normalarrow.svg" alt="arrowmobile">
+            <img class="doublearrow" src="../assets/doublearrow.svg" alt="doublearrow">
+        </h3>
+        <div class="dropdownmenu">
+            <a href="./aboutus.html" class="aboutus__knowus">Know us</a>
+            <a href="./contact.html" class="aboutus__contact">Contact</a>
+        </div>
+    </div>
+    <!-- LOGIN REGISTER -->
+    <a class="login--mobile" href="./login.html">Login/Register</a>
+
+    <div class="centralnav__language--mobile">
+        <img width="60" height="40" class="changelang__enflag changelang__lang selected"
+            src="../assets/en-flag.svg" alt="United States flag">
+        <img width="60" height="40" class="changelang__enflag changelang__lang" src="../assets/es-flag.svg"
+            alt="Spanish Flag">
+    </div>
+</div>
+<!-- RIGHT SIDE LINKS NAVIGATOR -->
+<div class="navbar__rightnav">
+    <!-- LOGIN -->
+    <div class="rightnav__login button">
+        <a class="login--desktop" href="./login.html">Login/Register</a>
+        <a class="login--tablet" href="./login.html">
+            <img src="../assets/signin.svg" alt="Sign in">
+        </a>
+
+    </div>
+    <!-- CHANGE LANGUAGE -->
+    <div class="rightnav__changelang button">
+        <img width="60" height="40" class="changelang__enflag" src="../assets/en-flag.svg"
+            alt="United States flag">
+        <h2 class="changelang__title">English</h2>
+        <ul class="changelang__options">
+            <li class="changelang__lang selected">English</li>
+            <li class="changelang__lang">Spanish</li>
+        </ul>
+    </div>
+</div>
+<!-- HAMBURGUER MENU FOR MOBILE -->
+<div class="hamburguer">
+    <span></span><span></span><span></span>
+</div>
 
     `;
 /*  NAV CONTAINER */

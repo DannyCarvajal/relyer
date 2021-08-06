@@ -375,7 +375,7 @@ html {
   margin: 40px 0 20px 0;
 }
 
-.how-it-works .wavy {
+.how-it-works > .wavy {
   display: none;
 }
 
