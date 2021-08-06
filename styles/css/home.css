@@ -469,6 +469,7 @@ html {
     border-radius: 10px;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item {
+    text-align: center;
     min-width: 100vw;
     margin: 0;
   }
@@ -528,6 +529,7 @@ html {
     padding: 0;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item > p {
+    text-align: justify;
     margin-top: 10px;
     font: 400 2rem/40px "Raleway", sans-serif;
     color: #010913;
@@ -638,7 +640,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 200px;
+  height: 180px;
   width: calc(400px *7);
   -webkit-box-align: center;
       -ms-flex-align: center;

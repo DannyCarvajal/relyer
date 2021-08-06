@@ -29,6 +29,7 @@
 
             &>p {
                 font: 400 1.7rem/40px $Raleway;
+                // text-align: justify;
             }
 
 
@@ -81,8 +82,11 @@
             @include scroller;
 
             &>.how-it-works__item {
+                text-align: center;
                 min-width: 100vw;
                 margin: 0;
+
+
             }
         }
     }
@@ -142,6 +146,7 @@
                 }
 
                 &>p {
+                    text-align: justify;
                     margin-top: 10px;
                     font: 400 2rem/40px $Raleway;
                     color: $black;
