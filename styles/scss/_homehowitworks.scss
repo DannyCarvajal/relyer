@@ -143,12 +143,13 @@
                 &>h3 {
                     font: 800 3.5rem $Raleway;
                     padding: 0;
+                    color: $black;
                 }
 
                 &>p {
                     text-align: justify;
                     margin-top: 10px;
-                    font: 400 2rem/40px $Raleway;
+                    font: 300 2rem/40px $Raleway;
                     color: $black;
 
 
@@ -170,6 +171,7 @@
 
                 &.learn {
                     align-self: flex-end;
+                    text-align: left;
                     margin-right: 120px;
 
                     &>h3 {
