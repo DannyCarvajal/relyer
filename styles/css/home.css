@@ -408,6 +408,8 @@ html {
 
 .how-it-works > .how-it-works__container > .how-it-works__item > p {
   font: 400 1.7rem/40px "Raleway", sans-serif;
+  max-width: 94vw;
+  margin: 0 auto;
 }
 
 .how-it-works > .how-it-works__container > .how-it-works__item .numbers {
@@ -531,8 +533,9 @@ html {
     color: #010913;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item > p {
+    max-width: unset;
     text-align: justify;
-    margin-top: 10px;
+    margin-top: 10px 0 0 0;
     font: 300 2rem/40px "Raleway", sans-serif;
     color: #010913;
   }
@@ -550,7 +553,7 @@ html {
     -ms-flex-item-align: end;
         align-self: flex-end;
     text-align: left;
-    margin-right: 120px;
+    margin-right: 60px;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item.learn > h3 {
     margin-left: 240px;

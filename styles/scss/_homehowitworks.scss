@@ -29,7 +29,9 @@
 
             &>p {
                 font: 400 1.7rem/40px $Raleway;
-                // text-align: justify;
+                max-width: 94vw;
+                margin: 0 auto;
+
             }
 
 
@@ -147,8 +149,9 @@
                 }
 
                 &>p {
+                    max-width: unset;
                     text-align: justify;
-                    margin-top: 10px;
+                    margin-top: 10px 0 0 0;
                     font: 300 2rem/40px $Raleway;
                     color: $black;
 
@@ -170,7 +173,7 @@
                 &.learn {
                     align-self: flex-end;
                     text-align: left;
-                    margin-right: 120px;
+                    margin-right: 60px;
 
                     &>h3 {
                         margin-left: 240px;
