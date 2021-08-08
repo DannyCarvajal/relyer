@@ -190,6 +190,7 @@ html {
     left: unset;
   }
   .mainwave {
+    min-width: 250px;
     z-index: -10;
   }
 }
