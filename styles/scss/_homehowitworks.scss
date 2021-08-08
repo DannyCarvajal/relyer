@@ -177,6 +177,10 @@
                     &>h3 {
                         margin-left: 240px;
                     }
+
+                    &>p {
+                        text-align: end;
+                    }
                 }
 
                 & .apply {}
@@ -190,6 +194,31 @@
 
                 .spiderwhite,
                 .chesswhite {
+                    left: 32vw;
+                }
+
+                .readingwhite {
+                    right: 33vw;
+                }
+
+
+            }
+        }
+    }
+}
+
+@media (min-width:1350px) {
+
+    .how-it-works {
+
+        /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
+        &>.how-it-works__container {
+
+            /* GENERAL STYLES FOR ALL OF THEM */
+            &>.how-it-works__item {
+
+                .spiderwhite,
+                .chesswhite {
                     left: 28vw;
                 }
 
@@ -197,8 +226,9 @@
                     right: 28vw;
                 }
 
-
             }
         }
     }
+
+
 }
