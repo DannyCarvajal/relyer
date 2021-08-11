@@ -14,6 +14,7 @@ let submitTest = document.getElementsByClassName("terminar-test")[0];
 		getAnswers();
 	} catch (error) {
 		console.error(error);
+		return printMessage("#FFE1DE", "#FE455B", "Error getting questions", "error");
 	}
 })();
 
@@ -25,6 +26,7 @@ async function getAnswers() {
 		printQuestions(questions, possibleAnswers);
 	} catch (error) {
 		console.error(error);
+		return printMessage("#FFE1DE", "#FE455B", "Error getting answers", "error");
 	}
 }
 
@@ -163,7 +165,7 @@ const sendResult = async data => {
 let sendQuestionList = [];
 let sendAnswerList = [];
 let score = [];
-let usuarioId = "8";
+let usuarioId = localStorage.getItem("userId");
 
 const validAllQuestionsAnswered = () => {
 	// VALIDATE IF THERE IS AT LEAST AN ANSWER PER QUESTION
@@ -180,7 +182,7 @@ const validAllQuestionsAnswered = () => {
 
 submitTest.addEventListener("click", async () => {
 	let validation = validAllQuestionsAnswered();
-	if (!validation) return alert("No se han completado todas las respuestas");
+	if (!validation) return printMessage("#FFE1DE", "#FE455B", "No se han completado todas las respuestas", "error");
 	// END VALIDATION
 
 	// IF SEND SUBMIT AGAIN CLEAN THE ARRAY TO SEND
@@ -211,7 +213,7 @@ submitTest.addEventListener("click", async () => {
 			sendAnswerList.push(arrayTemp.toString());
 			sendQuestionList.push(questionTitle[i].innerHTML);
 		} else {
-			return alert("Please fill the inputs");
+			return printMessage("#FFE1DE", "#FE455B", "Please fill the inputs", "error");
 		}
 	}
 

@@ -9,13 +9,15 @@ let resultData = document.getElementsByClassName("results__data")[0];
 let dataCharacter = document.getElementsByClassName("data__character")[0];
 let punctuation = document.getElementsByClassName("punctuation")[0];
 let dataResults = document.getElementsByClassName("data__desc")[0];
-let id = 8;
+let id = localStorage.getItem("userId");
+console.log(id);
 
 //Metodo para conseguir resultados enviando en el query el id
 !(async function conseguirResults() {
 	try {
 		let reqresults = await fetch("https://server-relyer.herokuapp.com/api/results/id/?id=" + id, {});
 		let response = await reqresults.json();
+		console.log(response);
 		// GET THE TOTALSCORE OF THE LAST TEST MADE BY AN USER
 		let totalScore = response.results[response.results.length - 1].totalScore;
 		printResults(totalScore);
@@ -39,8 +41,8 @@ function printResults(score) {
 	changeBgColor();
 	let resultColor = "white";
 	let dataColor = "white";
-	// let finalScore = score / 10;
-	let finalScore = 90;
+	let finalScore = score / 10;
+	// let finalScore = 90;
 	if (finalScore > 100) finalScore = 100;
 	let restScore = (1200 - score) / 10;
 	scoreMobile.innerHTML = "Your score is " + finalScore + "/100 ";
@@ -68,7 +70,7 @@ function printResults(score) {
         background: linear-gradient(180deg, #000D2D 0%, #00081A 30%);
         `;
 		dataResults.innerHTML +=
-			"You have just started your path in technology, and we are happy that you want to start this journey. However big challenges are about to come, and there are big players outside, that's why we are here to guide you, and remember... it's never too late to start, is too late to wait";
+			"You have just started your path in technology, and we are happy that you want to start this journey. However big challenges are about to come, and there are big players outside, that's why we are here to guide you, and remember... it's never too late to start, is too late to wait!";
 	} else if (finalScore <= 40) {
 		characterName.innerHTML += "<b>Jellyfish</b>";
 		chacterImg.src = "../assets/test/jellyfish.webp";

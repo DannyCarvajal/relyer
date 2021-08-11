@@ -52,7 +52,7 @@ navTemplate.innerHTML = `
     <div class="rightnav__login button">
         <a class="login--desktop" href="./login.html">Login/Register</a>
         <a class="login--tablet" href="./login.html">
-            <img src="../assets/home/signin.svg" alt="Sign in">
+            <img class="loginicon" src="../assets/home/signin.svg" alt="Sign in">
         </a>
 
     </div>
