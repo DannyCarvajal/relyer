@@ -150,7 +150,7 @@ const sendResult = async data => {
 			body: JSON.stringify(data),
 		});
 		if (sendRes.ok) {
-			window.location.href = "./results.html";
+			window.location.href = "./testresults.html";
 		} else {
 			throw new Error("Error sending the answers");
 		}
