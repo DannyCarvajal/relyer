@@ -131,7 +131,7 @@ html {
     padding-left: 80px;
   }
   .homevideo__description {
-    font: 300 2rem "Raleway", sans-serif;
+    font: 300 1.8rem "Raleway", sans-serif;
     padding-left: 80px;
     padding-bottom: 50px;
   }
@@ -350,6 +350,10 @@ html {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .home-solutions .card-solutions__container .card-solutions__card {
+    width: 230px;
+    height: 320px;
+  }
 }
 
 @media (min-width: 1180px) and (max-width: 1300px) {
@@ -360,7 +364,7 @@ html {
 
 @media (min-width: 1300px) {
   .home-solutions > .home-solutions__title {
-    font: 800 4rem "Raleway", sans-serif;
+    font: 800 3.8rem "Raleway", sans-serif;
   }
   .home-solutions > p {
     font: 300 2rem/50px "Raleway", sans-serif;
@@ -502,7 +506,7 @@ html {
   .how-it-works h2 {
     text-align: start;
     margin: 120px 0 130px 100px;
-    font: 400 4rem "Raleway", sans-serif;
+    font: 400 3.8rem "Raleway", sans-serif;
     color: #1A3256;
     z-index: 50;
   }
@@ -528,7 +532,7 @@ html {
     margin: 0px 0px 30px 120px;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item > h3 {
-    font: 800 3.5rem "Raleway", sans-serif;
+    font: 800 3.3rem "Raleway", sans-serif;
     padding: 0;
     color: #010913;
   }
@@ -536,7 +540,7 @@ html {
     max-width: unset;
     text-align: justify;
     margin-top: 10px 0 0 0;
-    font: 300 2rem/40px "Raleway", sans-serif;
+    font: 300 1.9rem/40px "Raleway", sans-serif;
     color: #010913;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item > .numbers {
@@ -702,7 +706,7 @@ html {
 
 @media (min-width: 1200px) {
   .allies > .allies > .allies__title {
-    font: 800 4rem "Raleway", sans-serif;
+    font: 800 3.8rem "Raleway", sans-serif;
   }
   .allies__slider::before, .allies__slider::after {
     background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
@@ -821,7 +825,7 @@ html {
   color: #1A3256;
 }
 
-.tech-level > img {
+.tech-level > a {
   position: relative;
   top: 15px;
 }
