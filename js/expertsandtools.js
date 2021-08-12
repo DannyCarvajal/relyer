@@ -2,7 +2,7 @@ const expertsContainer = document.getElementsByClassName("swiper-wrapper")[0];
 const toolsContainer = document.getElementsByClassName("swiper-wrapper")[1];
 
 !(async function fetchExpert() {
-	let request = await fetch("https://server-relyer.herokuapp.com/api/expertos?limite=10");
+	let request = await fetch("https://server-relyer.herokuapp.com/api/expertos?limite=6");
 	let response = await request.json();
 	let experts = response.usuarios;
 
@@ -91,7 +91,7 @@ const toolsContainer = document.getElementsByClassName("swiper-wrapper")[1];
 })();
 
 !(async function fetchTool() {
-	let request = await fetch("https://server-relyer.herokuapp.com/api/tools");
+	let request = await fetch("https://server-relyer.herokuapp.com/api/tools?desde=4&limite=10");
 	let response = await request.json();
 	let tools = response.tools;
 
