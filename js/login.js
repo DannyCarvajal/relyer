@@ -38,6 +38,6 @@ login.addEventListener("submit", async e => {
 		localStorage.setItem("userId", response.usuario.uid);
 		window.location.href = "../index.html";
 	} else {
-		printMessage("#FFE1DE", "#FE455B", "Password o email son incorrectos", "error");
+		printMessage("#FFE1DE", "#FE455B", "Password or email are incorrect", "error");
 	}
 });

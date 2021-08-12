@@ -43,7 +43,8 @@ ctaButton.addEventListener("submit", async e => {
 				window.location.href = "../html/login.html";
 			}, 2500);
 		} else {
-			printMessage("#FFE1DE", "#FE455B", response.errors[0].msg, "error");
+			// printMessage("#FFE1DE", "#FE455B", response.errors[0].msg, "error");
+			printMessage("#FFE1DE", "#FE455B", "Email already existed or invalid password length", "error");
 		}
 	} catch (err) {
 		console.error(err);
