@@ -250,6 +250,7 @@ ul {
 
 .padding-btn-send {
   padding: 0 30%;
+  cursor: pointer;
 }
 
 .img-networks-contact {

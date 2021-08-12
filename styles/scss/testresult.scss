@@ -1,6 +1,10 @@
 @import "global";
 @import "globaltest";
 
+footer {
+    margin-top: 0 !important;
+}
+
 main {
 
     & .results {

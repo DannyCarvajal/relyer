@@ -346,4 +346,8 @@ form > .form-container > .createaccount {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  form > .form-container > .createaccount a {
+    color: black;
+    text-decoration: underline;
+  }
 }

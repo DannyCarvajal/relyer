@@ -267,6 +267,10 @@ form {
                 margin-left: -25px;
                 align-self: center;
 
+                & a {
+                    color: black;
+                    text-decoration: underline;
+                }
 
 
             }

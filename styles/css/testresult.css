@@ -37,6 +37,10 @@ html {
 }
 
 /*COLORS*/
+footer {
+  margin-top: 0 !important;
+}
+
 main .results {
   display: -webkit-box;
   display: -ms-flexbox;
