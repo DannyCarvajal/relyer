@@ -7,7 +7,8 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: calc(100vh - 80px);
+        height: fit-content;
+
         @include bubbleAnimation;
 
         .bubbles {
@@ -65,7 +66,7 @@ main {
 
             & .data__desc {
                 text-align: justify;
-                max-width: 90vw;
+                max-width: 85vw;
                 font-size: 1.4rem;
                 line-height: 30px;
             }
@@ -76,7 +77,7 @@ main {
                     background-color: #109CFF;
                     display: block;
                     padding: 15px 30px;
-                    margin: 40px auto;
+                    margin: 40px auto 50px auto;
                     border-radius: 5px;
                     font-size: 1rem;
                     font-weight: 700;
@@ -92,10 +93,12 @@ main {
     /* tablet, landscape iPad */
 
     main {
-        & .results {
+        &>.results {
+            height: calc(100vh - 80px);
+
+
             &>.results__data {
                 & .data__character {
-                    margin-top: 10px;
 
                     & img {
                         width: 170px;
@@ -117,6 +120,7 @@ main {
 
         & .results {
 
+            height: calc(100vh - 80px);
             flex-direction: row;
             background: unset !important;
 

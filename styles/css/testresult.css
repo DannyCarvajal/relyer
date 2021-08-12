@@ -48,7 +48,9 @@ main .results {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(100vh - 80px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 main .results .bubbles {
@@ -323,7 +325,7 @@ main .results > .results__data .data__punctuation--mobile {
 
 main .results > .results__data .data__desc {
   text-align: justify;
-  max-width: 90vw;
+  max-width: 85vw;
   font-size: 1.4rem;
   line-height: 30px;
 }
@@ -333,7 +335,7 @@ main .results > .results__data .data__advice a {
   background-color: #109CFF;
   display: block;
   padding: 15px 30px;
-  margin: 40px auto;
+  margin: 40px auto 50px auto;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 700;
@@ -343,10 +345,10 @@ main .results > .results__data .data__advice a {
 
 @media (min-width: 600px) and (max-width: 1000px) {
   /* tablet, landscape iPad */
-  main .results > .results__data .data__character {
-    margin-top: 10px;
+  main > .results {
+    height: calc(100vh - 80px);
   }
-  main .results > .results__data .data__character img {
+  main > .results > .results__data .data__character img {
     width: 170px;
   }
 }
@@ -357,6 +359,7 @@ main .results > .results__data .data__advice a {
     overflow: hidden;
   }
   main .results {
+    height: calc(100vh - 80px);
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
