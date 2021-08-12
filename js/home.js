@@ -17,7 +17,7 @@ function playVideo() {
 
 	let returnMaxButton = document.createElement("img");
 	returnMaxButton.className = "returnButton";
-	returnMaxButton.src = "/assets/home/closewhite.svg";
+	returnMaxButton.src = "./assets/home/closewhite.svg";
 	returnMaxButton.alt = "Return Button";
 	returnMaxButton.setAttribute("style", "position:fixed; right:20px; top:20px; height:20px; width:20px; z-index:99999;cursor:pointer;");
 
