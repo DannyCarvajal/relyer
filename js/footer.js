@@ -11,10 +11,10 @@ footerTemplate.innerHTML = `
             <div class="background-menu mobile" style="display:flex;justify-content: space-around;align-items: center;">
                 <div class="menu-footer-mobile mobile" style="width:50%;">
                     <ul>
-                        <li> <a href="../index.html"> Home</a></li>
-                        <li> <a href="./experts.html"> Services</a></li>
-                        <li> <a href="./learn.html"> Learn more</a></li>
-                        <li><a href="./aboutUs.html"> About us</a></li>
+                        <li> <a class="foot" href="./index.html"> Home</a></li>
+                        <li> <a class="foot" href="./experts.html"> Services</a></li>
+                        <li> <a class="foot" href="./learn.html"> Learn more</a></li>
+                        <li><a class="foot" href="./aboutUs.html"> About us</a></li>
                     </ul>
                 </div>
                 <div class="networks mobile" style="width:50%;">
@@ -30,10 +30,10 @@ footerTemplate.innerHTML = `
             <div class="background-menu desktop">
                 <div class="menu-footer">
                     <ul>
-                    <li> <a href="../index.html"> Home</a></li>
-                        <li> <a href="./experts.html"> Services</a></li>
-                        <li> <a href="./learn.html"> Learn more</a></li>
-                        <li><a href="./aboutUs.html"> About us</a></li>
+                    <li> <a class="foot" href="../index.html"> Home</a></li>
+                        <li> <a class="foot" href="./experts.html"> Services</a></li>
+                        <li> <a class="foot"href="./learn.html"> Learn more</a></li>
+                        <li><a class="foot" href="./aboutUs.html"> About us</a></li>
                     </ul>
                 </div>
                 <div class="content-logo-footer">

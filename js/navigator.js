@@ -8,41 +8,41 @@ navTemplate.innerHTML = `
 <!-- CENTRAL LINKS NAVIGATOR -->
 <div class="navbar__centralnav">
     <!-- HOME -->
-    <a href="../index.html" class="centralnav__home">Home</a>
+    <a href="../index.html" class="translate centralnav__home">Home</a>
     <!-- SERVICES -->
     <div class="centralnav__services">
-        <h3>Services
+        <h3 class="translate">Services
             <img class="simplearrow" src="../assets/home/normalarrow.svg" alt="arrowmobile">
             <img class="doublearrow" src="../assets/home/doublearrow.svg" alt="doublearrow">
 
         </h3>
         <div class="dropdownmenu">
-            <a class=" services__experts" href="./experts.html">Experts &
+            <a class=" translate services__experts" href="./experts.html">Experts &
                 Tools</a>
-            <a href="./test.html" class="services__test">Diagnosis
+            <a href="./test.html" class="translate services__test">Diagnosis
                 Test</a>
         </div>
     </div>
     <!-- LEARN -->
-    <a href="./learn.html">Learn</a>
+    <a class="translate" href="./learn.html">Learn</a>
     <!-- ABOUT US -->
     <div class="centralnav__aboutus">
-        <h3>About us
+        <h3 class="translate">About us
             <img class="simplearrow" src="../assets/home/normalarrow.svg" alt="arrowmobile">
             <img class="doublearrow" src="../assets/home/doublearrow.svg" alt="doublearrow">
         </h3>
         <div class="dropdownmenu">
-            <a href="./aboutus.html" class="aboutus__knowus">Know us</a>
-            <a href="./contact.html" class="aboutus__contact">Contact</a>
+            <a href="./aboutus.html" class="translate aboutus__knowus">Know us</a>
+            <a href="./contact.html" class="translate aboutus__contact">Contact</a>
         </div>
     </div>
     <!-- LOGIN REGISTER -->
     <a class="login--mobile" href="./login.html">Login/Register</a>
 
     <div class="centralnav__language--mobile">
-        <img width="60" height="40" class="changelang__enflag changelang__lang selected"
+        <img width="60" height="40" class=" english changelang__enflag changelang__lang selected"
             src="../assets/home/en-flag.svg" alt="United States flag">
-        <img width="60" height="40" class="changelang__enflag changelang__lang" src="../assets/home/es-flag.svg"
+        <img width="60" height="40" class="spanish changelang__enflag changelang__lang" src="../assets/home/es-flag.svg"
             alt="Spanish Flag">
     </div>
 </div>
@@ -50,20 +50,20 @@ navTemplate.innerHTML = `
 <div class="navbar__rightnav">
     <!-- LOGIN -->
     <div class="rightnav__login button">
-        <a class="login--desktop" href="./login.html">Login/Register</a>
-        <a class="login--tablet" href="./login.html">
+        <a class="translate login--desktop" href="./login.html">Login/Register</a>
+        <a class="translate login--tablet" href="./login.html">
             <img class="loginicon" src="../assets/home/signin.svg" alt="Sign in">
         </a>
 
     </div>
     <!-- CHANGE LANGUAGE -->
     <div class="rightnav__changelang button">
-        <img width="60" height="40" class="changelang__enflag" src="../assets/home/en-flag.svg"
+        <img width="60" height="40" class="changelang__enflag bandera" src="../assets/home/en-flag.svg"
             alt="United States flag">
-        <h2 class="changelang__title">English</h2>
+        <h2 class="translate changelang__title">English</h2>
         <ul class="changelang__options">
-            <li class="changelang__lang selected">English</li>
-            <li class="changelang__lang">Spanish</li>
+            <li class="translate changelang__lang selected english">English</li>
+            <li class="translate changelang__lang spanish">Spanish</li>
         </ul>
     </div>
 </div>

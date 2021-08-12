@@ -22,6 +22,7 @@
     <script src="./js/navigator.js" defer></script>
     <script src="./js/validToken.js" defer></script>
     <script src="./js/home.js" defer></script>
+    <script src="./js/translationhome.js" defer></script>
 
     <title>Relyer</title>
 </head>
@@ -38,41 +39,41 @@
             <!-- CENTRAL LINKS NAVIGATOR -->
             <div class="navbar__centralnav">
                 <!-- HOME -->
-                <a href="#!" class="centralnav__home">Home</a>
+                <a href="#!" class="translate centralnav__home">Home</a>
                 <!-- SERVICES -->
                 <div class="centralnav__services">
-                    <h3>Services
+                    <h3 class="translate">Services
                         <img class="simplearrow" src="./assets/home/normalarrow.svg" alt="arrowmobile">
                         <img class="doublearrow" src="./assets/home/doublearrow.svg" alt="doublearrow">
 
                     </h3>
                     <div class="dropdownmenu">
-                        <a class=" services__experts" href="./html/experts.html">Experts &
+                        <a class="translate services__experts" href="./html/experts.html">Experts &
                             Tools</a>
-                        <a href="./html/test.html" class="services__test">Diagnosis
+                        <a href="./html/test.html" class=" translate services__test">Diagnosis
                             Test</a>
                     </div>
                 </div>
                 <!-- LEARN -->
-                <a href="./html/learn.html">Learn</a>
+                <a class="translate" href="./html/learn.html">Learn</a>
                 <!-- ABOUT US -->
                 <div class="centralnav__aboutus">
-                    <h3>About us
+                    <h3 class="translate">About us
                         <img class="simplearrow" src="./assets/home/normalarrow.svg" alt="arrowmobile">
                         <img class="doublearrow" src="./assets/home/doublearrow.svg" alt="doublearrow">
                     </h3>
                     <div class="dropdownmenu">
-                        <a href="./html/aboutus.html" class="aboutus__knowus">Know us</a>
-                        <a href="./html/contact.html" class="aboutus__contact">Contact</a>
+                        <a href="./html/aboutus.html" class="translate aboutus__knowus">Know us</a>
+                        <a href="./html/contact.html" class="translate aboutus__contact">Contact</a>
                     </div>
                 </div>
                 <!-- LOGIN REGISTER -->
-                <a class="login--mobile" href="./html/login.html">Login/Register</a>
+                <a class="translate login--mobile" href="./html/login.html">Login/Register</a>
 
                 <div class="centralnav__language--mobile">
-                    <img width="60" height="40" class="changelang__enflag changelang__lang selected"
+                    <img width="60" height="40" class="changelang__enflag changelang__lang selected english"
                         src="./assets/home/en-flag.svg" alt="United States flag">
-                    <img width="60" height="40" class="changelang__enflag changelang__lang"
+                    <img width="60" height="40" class="changelang__enflag changelang__lang spanish"
                         src="./assets/home/es-flag.svg" alt="Spanish Flag">
                 </div>
             </div>
@@ -80,7 +81,7 @@
             <div class="navbar__rightnav">
                 <!-- LOGIN -->
                 <div class="rightnav__login button">
-                    <a class="login--desktop" href="./html/login.html">Login/Register</a>
+                    <a class="translate login--desktop" href="./html/login.html">Login/Register</a>
                     <a class="login--tablet" href="./html/login.html">
                         <img class="loginicon" src="./assets/home/signin.svg" alt="Sign in">
                     </a>
@@ -88,12 +89,12 @@
                 </div>
                 <!-- CHANGE LANGUAGE -->
                 <div class="rightnav__changelang button">
-                    <img width="60" height="40" class="changelang__enflag" src="./assets/home/en-flag.svg"
+                    <img width="60" height="40" class="changelang__enflag bandera" src="./assets/home/en-flag.svg"
                         alt="United States flag">
-                    <h2 class="changelang__title">English</h2>
+                    <h2 class="translate changelang__title">English</h2>
                     <ul class="changelang__options">
-                        <li class="changelang__lang selected">English</li>
-                        <li class="changelang__lang">Spanish</li>
+                        <li class="translate changelang__lang english selected">English</li>
+                        <li class="translate changelang__lang spanish">Spanish</li>
                     </ul>
                 </div>
             </div>
@@ -107,20 +108,20 @@
 
     <!-- START HOMELAND VIDEO -->
     <main class="homevideo">
-        <h1 class="homevideo__maintitle">Relyer</h1>
-        <p class="homevideo__description">
+        <h1 class="translate homevideo__maintitle">Relyer</h1>
+        <p class="translate homevideo__description">
             Our platform helps
             <abbr title="Micro, small and medium size enterprises">MSMEs</abbr>
             identify <br>
             their tech needs, connecting <br>
             with suppliers & experts <br>
             that will boost your company<br>
-            <button class="play-button-video--responsive button">Play video</button>
+            <button class=" play-button-video--responsive button">Play video</button>
         </p>
         <video class="homevideo__video--desktop" src="./assets/home/relyer.mp4" controls></video>
 
         <div class="homevideo__techlevel">
-            <p>Know the <span class="techlevelspan"> tech level</span> <br> of your company</p>
+            <p class="translate">Know the <span class="techlevelspan"> tech level</span> <br> of your company</p>
 
             <a href="html/test.html" class="rightarrowcontainer">
                 <i class="fas fa-arrow-circle-right"></i>
@@ -143,25 +144,25 @@
     <!-- START HOME SOLUTIONS -->
     <section class="home-solutions">
 
-        <h2 class="home-solutions__title">Our solutions</h2>
-        <p>Tech and innovation are our right hand</p>
+        <h2 class="translate home-solutions__title">Our solutions</h2>
+        <p class="translate">Tech and innovation are our right hand</p>
 
         <div class="card-solutions__container home-solutions--desktop">
             <div width="132" height="145" class="card-solutions__card diagnosis">
                 <img src="./assets/home/cardtest.svg" alt="Resources">
-                <h3 class="card-solutionstitle ">Diagnosis</h3>
+                <h3 class="translate card-solutionstitle ">Diagnosis</h3>
             </div>
             <div width="132" height="145" class="card-solutions__card tech">
                 <img src="./assets/home/cardtech.svg" alt="Tech">
-                <h3 class="card-solutionstitle ">Tech</h3>
+                <h3 class="translate card-solutionstitle ">Tech</h3>
             </div>
             <div width="132" height="145" class="card-solutions__card resources">
                 <img src="./assets/home/cardresources.svg" alt="Resources">
-                <h3 class="card-solutionstitle ">Resources</h3>
+                <h3 class="translate card-solutionstitle ">Resources</h3>
             </div>
             <div width="132" height="145" class="card-solutions__card experts">
                 <img src="./assets/home/cardexperts.svg" alt="Experts">
-                <h3 class="card-solutionstitle ">Experts</h3>
+                <h3 class="translate card-solutionstitle ">Experts</h3>
             </div>
         </div>
     </section>
@@ -171,14 +172,14 @@
     <section class="how-it-works">
 
         <img height="1007" width="100vw" class="wavy" src="./assets/home/Previa.jpg" alt="wavy">
-        <h2 class="how-it-works__title">How does it <span>work?</span> </h2>
+        <h2 class="translate how-it-works__title">How does it <span>work?</span> </h2>
 
         <div class="how-it-works__container">
 
             <div class="how-it-works__item identify">
                 <img class="numbers number1" src="./assets/home/number1.svg" alt="number1">
-                <h3>Identify</h3>
-                <p>Recognize your needs with<br>
+                <h3 class="translate">Identify</h3>
+                <p class="translate">Recognize your needs with<br>
                     our diagnosis in areas such as <br>
                     marketing, costumer service, <br>
                     management,and more
@@ -190,8 +191,8 @@
 
             <div class="how-it-works__item learn">
                 <img class="numbers number2" src="./assets/home/number2.svg" alt="number2">
-                <h3>Learn</h3>
-                <p>We provide useful content, <br>
+                <h3 class="translate">Learn</h3>
+                <p class="translate">We provide useful content, <br>
                     suggest tools for you and<br>
                     connect you with experts that<br>
                     fit your needs and expectations
@@ -202,8 +203,8 @@
 
             <div class="how-it-works__item apply">
                 <img class="numbers number3" src="./assets/home/number3.svg" alt="number3">
-                <h3>Apply</h3>
-                <p> You can have 1:1 meetings <br>
+                <h3 class="translate">Apply</h3>
+                <p class="translate"> You can have 1:1 meetings <br>
                     with multidisciplinary experts<br>
                     that will answer your questions <br>
                     and boost your company
@@ -217,7 +218,7 @@
 
     <!-- START PHRASE OBSTACLES -->
     <section class="phraseobstacles">
-        <p>It doesn’t matter whether you’re
+        <p class="translate">It doesn’t matter whether you’re
             struggling with
             tech, or if you are more experienced,
             <strong>
@@ -237,7 +238,7 @@
     <!-- START ALLIES -->
     <section class="allies">
 
-        <h2 class="allies__title">Allies that support us</h2>
+        <h2 class="translate allies__title">Allies that support us</h2>
 
         <div class="allies__slider">
             <div class="cover-slider"></div>
@@ -261,7 +262,7 @@
 
     <!-- START TECH LEVEL -->
     <div class="tech-level">
-        <h2>Know the <strong>tech level</strong> of your company</h2>
+        <h2 class="translate">Know the <strong>tech level</strong> of your company</h2>
         <a href="./html/test.html">
             <img class="buttonright" src="./assets/home/arrowcta.svg" alt="Arrow">
         </a>
@@ -298,10 +299,10 @@
             <div class="background-menu desktop">
                 <div class="menu-footer">
                     <ul>
-                        <li> <a href="#!"> Home</a></li>
-                        <li> <a href="./html/experts.html"> Services</a></li>
-                        <li> <a href="./html/learn.html"> Learn more</a></li>
-                        <li><a href="./html/aboutus.html"> About us</a></li>
+                        <li> <a class="translate" href="#!"> Home</a></li>
+                        <li> <a class="translate" href="./html/experts.html"> Services</a></li>
+                        <li> <a class="translate" href="./html/learn.html"> Learn more</a></li>
+                        <li><a class="translate" href="./html/aboutus.html"> About us</a></li>
                     </ul>
                 </div>
                 <div class="content-logo-footer">
