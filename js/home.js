@@ -1,8 +1,5 @@
 // HOME VIDEO
-let playButtonResponsive = document.getElementsByClassName(
-	"play-button-video--responsive"
-)[0];
-
+let playButtonResponsive = document.getElementsByClassName("play-button-video--responsive")[0];
 playButtonResponsive.addEventListener("click", playVideo);
 
 function playVideo() {
@@ -20,24 +17,19 @@ function playVideo() {
 
 	let returnMaxButton = document.createElement("img");
 	returnMaxButton.className = "returnButton";
-	returnMaxButton.src = "./assets/closewhite.svg";
+	returnMaxButton.src = "./assets/home/closewhite.svg";
 	returnMaxButton.alt = "Return Button";
-	returnMaxButton.setAttribute(
-		"style",
-		"position:fixed; right:20px; top:20px; height:20px; width:20px; z-index:99999;cursor:pointer;"
-	);
+	returnMaxButton.setAttribute("style", "position:fixed; right:20px; top:20px; height:20px; width:20px; z-index:99999;cursor:pointer;");
 
-	let youtubeIframe = document.createElement("iframe");
-	youtubeIframe.style = `position:fixed;   top: 50%; left: 50%; 
-    transform: translate(-50%, -50%); z-index:99999; max-width:100vw; `;
-	youtubeIframe.setAttribute("name", "Youtube video player");
-	youtubeIframe.frameBorder = 0;
-	youtubeIframe.allow =
-		"accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture; fullscreen;";
-	youtubeIframe.style.height = 415 + "px";
-	youtubeIframe.style.width = 800 + "px";
-	youtubeIframe.src = "https://www.youtube-nocookie.com/embed/zsKzUwQ3q-U";
-	document.body.append(bg, returnMaxButton, youtubeIframe);
+	let video = document.createElement("video");
+	video.src = "./assets/home/relyer.mp4";
+	video.setAttribute(
+		"style",
+		`
+			position:fixed;  top: 50%; left: 50%; height:415px; width:800px; display:block; transform: translate(-50%, -50%); z-index:99999; max-width:100vw;`
+	);
+	video.controls = true;
+	document.body.append(bg, returnMaxButton, video);
 
 	// RETURN ON X CLICK
 	const closeMax = () => {

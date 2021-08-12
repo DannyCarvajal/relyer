@@ -131,7 +131,7 @@ html {
     padding-left: 80px;
   }
   .homevideo__description {
-    font: 300 2rem "Raleway", sans-serif;
+    font: 300 1.8rem "Raleway", sans-serif;
     padding-left: 80px;
     padding-bottom: 50px;
   }
@@ -190,6 +190,7 @@ html {
     left: unset;
   }
   .mainwave {
+    min-width: 250px;
     z-index: -10;
   }
 }
@@ -349,6 +350,10 @@ html {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .home-solutions .card-solutions__container .card-solutions__card {
+    width: 230px;
+    height: 320px;
+  }
 }
 
 @media (min-width: 1180px) and (max-width: 1300px) {
@@ -359,7 +364,7 @@ html {
 
 @media (min-width: 1300px) {
   .home-solutions > .home-solutions__title {
-    font: 800 4rem "Raleway", sans-serif;
+    font: 800 3.8rem "Raleway", sans-serif;
   }
   .home-solutions > p {
     font: 300 2rem/50px "Raleway", sans-serif;
@@ -407,6 +412,8 @@ html {
 
 .how-it-works > .how-it-works__container > .how-it-works__item > p {
   font: 400 1.7rem/40px "Raleway", sans-serif;
+  max-width: 94vw;
+  margin: 0 auto;
 }
 
 .how-it-works > .how-it-works__container > .how-it-works__item .numbers {
@@ -499,7 +506,7 @@ html {
   .how-it-works h2 {
     text-align: start;
     margin: 120px 0 130px 100px;
-    font: 400 4rem "Raleway", sans-serif;
+    font: 400 3.8rem "Raleway", sans-serif;
     color: #1A3256;
     z-index: 50;
   }
@@ -525,14 +532,15 @@ html {
     margin: 0px 0px 30px 120px;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item > h3 {
-    font: 800 3.5rem "Raleway", sans-serif;
+    font: 800 3.3rem "Raleway", sans-serif;
     padding: 0;
     color: #010913;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item > p {
+    max-width: unset;
     text-align: justify;
-    margin-top: 10px;
-    font: 300 2rem/40px "Raleway", sans-serif;
+    margin-top: 10px 0 0 0;
+    font: 300 1.9rem/40px "Raleway", sans-serif;
     color: #010913;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item > .numbers {
@@ -549,16 +557,35 @@ html {
     -ms-flex-item-align: end;
         align-self: flex-end;
     text-align: left;
-    margin-right: 120px;
+    margin-right: 60px;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item.learn > h3 {
     margin-left: 240px;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item.learn > p {
+    text-align: end;
   }
   .how-it-works > .how-it-works__container > .how-it-works__item .spiderwhite,
   .how-it-works > .how-it-works__container > .how-it-works__item .readingwhite,
   .how-it-works > .how-it-works__container > .how-it-works__item .chesswhite {
     position: absolute;
     top: -25px;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item .spiderwhite,
+  .how-it-works > .how-it-works__container > .how-it-works__item .chesswhite {
+    left: 32vw;
+  }
+  .how-it-works > .how-it-works__container > .how-it-works__item .readingwhite {
+    right: 33vw;
+  }
+}
+
+@media (min-width: 1350px) {
+  .how-it-works {
+    /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
+  }
+  .how-it-works > .how-it-works__container {
+    /* GENERAL STYLES FOR ALL OF THEM */
   }
   .how-it-works > .how-it-works__container > .how-it-works__item .spiderwhite,
   .how-it-works > .how-it-works__container > .how-it-works__item .chesswhite {
@@ -679,7 +706,7 @@ html {
 
 @media (min-width: 1200px) {
   .allies > .allies > .allies__title {
-    font: 800 4rem "Raleway", sans-serif;
+    font: 800 3.8rem "Raleway", sans-serif;
   }
   .allies__slider::before, .allies__slider::after {
     background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
@@ -715,11 +742,14 @@ html {
   max-width: 80vw;
 }
 
-.phraseobstacles > img {
+.phraseobstacles > picture {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
   padding-top: 25px;
+}
+
+.phraseobstacles > picture > img {
   width: 80vw;
 }
 
@@ -754,12 +784,14 @@ html {
     color: white;
     max-width: 40vw;
   }
-  .phraseobstacles > img {
+  .phraseobstacles > picture {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     padding-top: none;
     position: static;
+  }
+  .phraseobstacles > picture > img {
     width: 40vw;
   }
 }
@@ -793,7 +825,7 @@ html {
   color: #1A3256;
 }
 
-.tech-level > img {
+.tech-level > a {
   position: relative;
   top: 15px;
 }

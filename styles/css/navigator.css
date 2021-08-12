@@ -52,6 +52,8 @@ html {
   width: 100vw;
   height: 140px;
   z-index: 200;
+  position: relative;
+  z-index: 1000;
   /* LOGO NAVIGATOR */
   /* CENTRAL LINKS NAVIGATOR */
   /* RIGHT SIDE NAV */

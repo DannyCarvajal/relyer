@@ -4,28 +4,309 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=5.0">
     <meta name="author" content="Relyer Team">
-    <meta name="description"
-        content="Get to know us and discover our team, reviews from our customers and our values, this is Relyer">
+    <meta name="description" content="Get to know Relyer and the team behind it">
     <meta name="keywords"
-        content="Values, Relyer, Company, Digital transformation, Aleja Henao, Oliver Daniel, Juan Jose, Santiago, Alejandro Villamil ">
-    <link rel="icon" href="../assets/relyer-icon.svg">
+        content="digital, transformation, tech, company, entrepreneurship, Protalento, Relyer, digitalize company ">
+    <link rel="icon" href="../assets/home/relyer-icon.svg">
+    <!-- FONT AWESOME -->
+    <script src='https://kit.fontawesome.com/a2ed2fdecb.js' crossorigin='anonymous'></script>
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- STYLES -->
-    <link rel="stylesheet" href="../styles/css/navigator.css">
-    <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/a2ed2fdecb.js" crossorigin="anonymous"></script>
-    <!-- SCRIPTS -->
+    <link rel="stylesheet" href="../styles/css/navigator.min.css">
+    <link rel="stylesheet" href="../styles/css/aboutus.min.css">
+    <link rel="stylesheet" href="../styles/css/footer.min.css">
+    <!-- SCRIPTSS -->
+    <script src="../js/printMessage.js" async></script>
+    <script src="../js/aboutSlider.js" defer></script>
     <script src="../js/navigator.js" defer></script>
+    <script src="../js/validToken.js" defer></script>
+    <script src="../js/footer.js" defer></script>
+    <title>About Us</title>
 
-    <title>Relyer</title>
 </head>
 
 <body>
-
     <header>
         <nav class="navbar"></nav>
     </header>
+    <!-- Section Slider -->
+
+    <!-- Slider main container -->
+    <section class="banner-aboutus">
+        <div class="aboutus-img">
+            <h1 class="introTitle translate">DISCOVER</h1>
+            <h2 class="introTitle2 translate"> RELYER</h2>
+            <img src="../assets/aboutus/delfines-aboutus.jpeg" alt="dolphins">
+        </div>
+    </section>
+
+
+    <!-- Section about We Give -->
+    <section class="about-we-give">
+        <div class="what-do-we-give">
+            <h3 class="title-section-we-give translate">Who are we?</h3>
+            <div class="explanation-about-us">
+                <p class="info translate"><span class="info-we-give">We are Relyer and with our platform you can access
+                        to many resources, and grow your company always adviced by experts </span><br><span
+                        class="info-we-give2"> We are part of all the processes of the digital transformation
+                    </span><br> Grow your company, and build the future with the hand of the <span
+                        style="font-weight: bold;">digital transformation</span> </p>
+                <img src="https://i1.wp.com/cyf.com/wp-content/uploads/2020/05/campaign-creators-gmsnxqiljp4-unsplash.jpeg?ssl=1"
+                    alt="aboutUs" class="about-us-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Values -->
+    <div class="counters" style="display: none;">
+        <div class="counter1">
+            <div class="figure">+20</div>
+            <div class="title-counter translate">Professionals</div>
+        </div>
+        <div class="counter2">
+            <div class="figure">+1000</div>
+            <div class="title-counter translate">Tech suggestions</div>
+        </div>
+        <div class="counter3">
+            <div class="figure">+30</div>
+            <div class="title-counter translate">Articles</div>
+        </div>
+    </div>
+
+    <img class="about-wave" src="../assets/aboutus/aboutwave.svg" alt="wave">
+    <section class="values">
+        <div class="title-values">
+            <img src="../assets/aboutus/darkdolphin.svg" alt="dolphinLogo" class="logo-simple">
+            <p class="subtitle-values translate">Discover</p>
+            <div class="relyer-brand">
+                <h3>RE<br>LY<br>ER<br></h3>
+                <h4 class="title-our-ADN translate">Our <span style="font-weight: bold;">ADN</span></h4>
+            </div>
+        </div>
+        <div class="our-ADN">
+            <img src="https://www.claromentis.com/wp-content/uploads/2019/09/CoreValue-small-960x1024.png"
+                alt="ourValues" class="ourValues">
+        </div>
+    </section>
+    <!-- Section Choose Us -->
+    <section class="choose-us">
+        <div class="title-choose-us">
+            <img src="../assets/aboutus/darkdolphin.svg" alt="dolphinLogo" class="logo-simple">
+            <h3 class="title-section-chooseUs translate">Why Relyer?</h3>
+        </div>
+        <div class="items-why-choose-us">
+            <div class="item1-why-chooseUs">
+                <div class="item-1">
+                    <i class="fas fa-users" style="font-size: 60px;"></i>
+                </div>
+                <div class="info-item-1 translate">We value people ,consumers and our team as a family</div>
+            </div>
+            <div class="item2-why-chooseUs">
+                <div class="item-2">
+                    <i class="fas fa-chart-line" style="font-size: 60px;"></i>
+                </div>
+                <div class="info-item-2 translate">We work transparently with our team, creating valuable relationships
+                </div>
+            </div>
+            <div class="item3-why-chooseUs">
+                <div class="item-3">
+                    <i class="fas fa-lightbulb" style="font-size: 60px;"></i>
+                </div>
+                <div class="info-item-3 translate">We are ideas and solutions generators </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Team -->
+    <section class="team">
+        <div class="title-section-team">
+            <h4 class="team-title translate">TEAM</h4>
+        </div>
+        <div class="members-team">
+            <div class="member1 member-ctn">
+                <img src="../assets/aboutus/Perfil5.png" alt="team-member" class="photo-member1 member-photo">
+                <div class="member-info">
+                    <p class="name-member1 name-member">Santiago</p>
+                    <p class="position-member1 translate">Scrum Master</p>
+                    <div class="social-media">
+                        <a href="" class="twitter tw-member1"><img
+                                src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/santiagosalamancadev/"
+                            class="linkedin ln-member1"><img
+                                src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="member2 member-ctn">
+                <img src="../assets/aboutus/daniel-perfil.jpeg" alt="team-member" class="photo-member2 member-photo">
+                <div class="member-info">
+                    <p class="name-member2 name-member">Daniel</p>
+                    <p class="position-member2 translate">UX/UI designer</p>
+                    <div class="social-media">
+                        <a href="" class="twitter tw-member2"><img
+                                src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-carvajal-tsweetheart/"
+                            class="linkedin ln-member2"><img
+                                src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="member3 member-ctn">
+                <img src="../assets/aboutus/perfil-aleja.jpeg" alt="team-member" class="photo-member3 member-photo">
+                <div class="member-info">
+                    <p class="name-member3 name-member">Alejandra</p>
+                    <p class="position-member3 translate">Product Owner</p>
+                    <div class="social-media">
+                        <a target="_blank" href="" class="twitter tw-member3"><img
+                                src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                alt=""></a>
+                        <a href="https://www.linkedin.com/in/alejandra-henao-espitia/" class="linkedin ln-member3"><img
+                                src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="member4 member-ctn">
+                <img src="../assets/aboutus/Juan Jose Florez.jpg" alt="team-member" class="photo-member4 member-photo">
+                <div class="member-info">
+                    <p class="name-member4 name-member">Juan José</p>
+                    <p class="position-member4 translate">Backend developer</p>
+                    <div class="social-media">
+                        <a target="_blank" href="" class="twitter tw-member4"><img
+                                src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/juan-jose-florez-rodriguez/"
+                            class="linkedin ln-member4"><img
+                                src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="member5 member-ctn">
+                <img src="../assets/aboutus/Documentos escaneados_page-0001.jpg" alt="team-member"
+                    class="photo-member4 member-photo">
+                <div class="member-info">
+                    <p class="name-member5 name-member">Alejandro</p>
+                    <p class="position-member5 translate">Frontend developer</p>
+                    <div class="social-media">
+                        <a target="_blank" href="" class="twitter tw-member5"><img
+                                src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                alt=""></a>
+                        <a href="" class="linkedin ln-member5"><img
+                                src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Section Skills -->
+    <section class="skills" style="display: none;">
+        <div class="title-section-skills">
+            <h4 class="team-skills translate">OUR SKILLS</h4>
+        </div>
+        <div class="skills-ctn">
+            <div class="progress1">
+                <p class="skill1 translate">Sustainability</p>
+                <div class="progress-value1 progress-bar"></div>
+            </div>
+            <div class="progress2">
+                <p class="skill2 translate">Adaptation</p>
+                <div class="progress-value2 progress-bar"></div>
+            </div>
+            <div class="progress3">
+                <p class="skill3 translate">Growth</p>
+                <div class="progress-value3 progress-bar"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Reviews -->
+    <section class="reviews">
+        <div class="title-section-reviews">
+            <h4 class="title-reviews translate">What our clients say</h4>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper-container swpcont2">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="innerslide">
+                        <img src="../assets/aboutus/cost1.jpg" alt="woman" class="userpic">
+                        <h2 class="name">Sara</h2>
+                        <p class="opinion translate">"You guys are amazing, my company went somewhere I didn't believe
+                            possible
+                            with all the feedback and tools, thank you so much, worth every penny"</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="innerslide">
+                        <img src="../assets/aboutus/cost2.jpg" alt="guy" class="userpic">
+                        <h2 class="name">Andrew</h2>
+                        <p class="opinion translate">"I'm spechless for all the things I learnt and the way my
+                            entrepreneur ideas
+                            went
+                            high, thank you so much, relyer forever"</p>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="innerslide">
+                        <img src="../assets/aboutus/cost3.jpg" alt="woman" class="userpic">
+                        <h2 class="name">Danna</h2>
+                        <p class="opinion translate">" I sincerely can say that it was really great, you might think is
+                            just a
+                            common
+                            test, but is somethigng really brand new, and you have the best guidance in what you need"
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="innerslide">
+                        <img src="../assets/aboutus/cost4.jpg" alt="man" class="userpic">
+                        <h2 class="name">Shawn</h2>
+                        <p class="opinion translate">" I mean like just can say 2 words , thank you"</p>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="innerslide">
+                        <img src="../assets/aboutus/cost5.jpg" alt="woman" class="userpic">
+                        <h2 class="name">Sofia</h2>
+                        <p class="opinion translate">" When you give your best and you're guided by the best success is
+                            a joke to
+                            you"
+                    </div>
+
+                    </p>
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swp1"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev btnpswp2"></div>
+            <div class="swiper-button-next btnnswp2"></div>
+
+        </div>
+    </section>
+
+    <footer></footer>
 
 </body>
 
