@@ -106,6 +106,10 @@ form {
 
             &.conditions {
                 margin-top: 15px;
+
+                &>.conditionslabel {
+                    width: 70vw;
+                }
             }
         }
 
@@ -149,7 +153,7 @@ form {
             margin-bottom: 20px;
             font-weight: 800;
             font-size: 1rem;
-            font-weight: 400;
+            font-weight: 600;
             display: inline-block;
             color: black;
 
@@ -172,12 +176,14 @@ form {
             font: 400 1.15rem $Raleway;
         }
 
+        width: 80vw;
+
         &>.createaccount {
             margin-top: 20px;
             align-self: center;
 
             & a {
-                color: black;
+                color: white;
                 text-decoration: underline;
             }
         }
@@ -319,9 +325,15 @@ form {
             }
 
             &>.createaccount {
+                width: unset;
                 margin-top: 20px;
                 margin-left: -25px;
                 align-self: center;
+
+                & a {
+
+                    color: black;
+                }
             }
         }
     }

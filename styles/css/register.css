@@ -146,6 +146,7 @@ form > .form-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 80vw;
 }
 
 form > .form-container > h1 {
@@ -181,6 +182,10 @@ form > .form-container > .inputcontainer:first-of-type {
 
 form > .form-container > .inputcontainer.conditions {
   margin-top: 15px;
+}
+
+form > .form-container > .inputcontainer.conditions > .conditionslabel {
+  width: 70vw;
 }
 
 form > .form-container > .inputcontainer > .input {
@@ -222,7 +227,7 @@ form > .form-container > .selectlabel {
   margin-bottom: 20px;
   font-weight: 800;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   display: inline-block;
   color: black;
 }
@@ -259,7 +264,7 @@ form > .form-container > .createaccount {
 }
 
 form > .form-container > .createaccount a {
-  color: black;
+  color: white;
   text-decoration: underline;
 }
 
@@ -406,10 +411,14 @@ form > .form-container > .createaccount a {
     font: 400 1.15rem "Raleway", sans-serif;
   }
   form > .form-container > .createaccount {
+    width: unset;
     margin-top: 20px;
     margin-left: -25px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  form > .form-container > .createaccount a {
+    color: black;
   }
 }
