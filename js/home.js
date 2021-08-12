@@ -22,7 +22,7 @@ function playVideo() {
 	returnMaxButton.setAttribute("style", "position:fixed; right:20px; top:20px; height:20px; width:20px; z-index:99999;cursor:pointer;");
 
 	let video = document.createElement("video");
-	video.src = "./assets/home/Relyer.mp4";
+	video.src = "./assets/home/relyer.mp4";
 	video.setAttribute(
 		"style",
 		`
