@@ -84,9 +84,13 @@ function createCardElement(i, questions, questiontype) {
 
 		questionSelected = normalQuestion;
 
-		if (value.answer == "Ninguno" || value.answer == "No" || value.answer == "Ninguna") questionSelected = noOption;
+		if (value.answer == "Ninguno" || value.answer == "No" || value.answer == "Ninguna" || value.answer == "None") questionSelected = noOption;
 
-		if ((questiontype === "0" && value.answer == "Otros (Especifique)") || (questiontype === "2" && counter == questions.length)) {
+		if (
+			(questiontype === "0" && value.answer == "Otros (Especifique)") ||
+			(questiontype === "2" && counter == questions.length) ||
+			(questiontype === "0" && value.answer == "Others(specify)")
+		) {
 			questionSelected = OtherOption;
 		}
 
@@ -149,8 +153,10 @@ const sendResult = async data => {
 			headers: {
 				"content-type": "application/json",
 			},
+			mode: "cors",
 			body: JSON.stringify(data),
 		});
+		console.log(sendRes);
 		if (sendRes.ok) {
 			window.location.href = "./testresults.html";
 		} else {
@@ -182,9 +188,9 @@ const validAllQuestionsAnswered = () => {
 
 submitTest.addEventListener("click", async () => {
 	let validation = validAllQuestionsAnswered();
-	if (!validation) return printMessage("#FFE1DE", "#FE455B", "No se han completado todas las respuestas", "error");
+	if (!validation) return printMessage("#FFE1DE", "#FE455B", "All answers have not been completed", "error");
 	// END VALIDATION
-
+	console.log("entered");
 	// IF SEND SUBMIT AGAIN CLEAN THE ARRAY TO SEND
 	sendQuestionList = [];
 	sendAnswerList = [];
@@ -198,15 +204,18 @@ submitTest.addEventListener("click", async () => {
 		let guardar = false;
 		validation.forEach(value => {
 			if (
+				(value.type == "checkbox" && value.checked && value.value != "Others") ||
+				(value.type == "radio" && value.checked && value.value != "Others(specify)") ||
+				(value.type == "text" && !value.disabled && value.value) ||
 				(value.type == "checkbox" && value.checked && value.value != "Otros") ||
-				(value.type == "radio" && value.checked && value.value != "Otros (Especifique)") ||
-				(value.type == "text" && !value.disabled && value.value)
+				(value.type == "radio" && value.checked && value.value != "Otros (especifique)")
 			) {
 				arrayTemp.push(value.value);
 				score.push(value.id);
 				guardar = true;
 			}
 		});
+		console.log("entered");
 
 		// IF SAVE IS TRUE PUSH ANSWERS AND ITS CORRESPONDING ANSWERS
 		if (guardar && guardar != "0") {
@@ -216,6 +225,7 @@ submitTest.addEventListener("click", async () => {
 			return printMessage("#FFE1DE", "#FE455B", "Please fill the inputs", "error");
 		}
 	}
+	console.log("entered");
 
 	// OBJECT TO BE SENT TO STORE THE RESULTS
 	let userData = {
@@ -224,6 +234,7 @@ submitTest.addEventListener("click", async () => {
 		score: score,
 		usuarioId: usuarioId,
 	};
+	console.log(userData);
 
 	sendResult(userData);
 });
