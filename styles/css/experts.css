@@ -146,10 +146,11 @@ header {
 }
 
 .experts-container .swiper-container {
+  position: relative;
   height: 527px;
   margin-top: 0px;
   padding: 20px;
-  width: 90vw;
+  width: 100vw;
 }
 
 .experts-container .swiper-container .slidercontrols {
@@ -243,6 +244,19 @@ header {
 
 .tools-container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tools-container > img {
@@ -282,10 +296,11 @@ header {
 }
 
 .tools-container > .swiper-container {
+  position: relative;
   height: 450px;
   margin-top: 20px;
   padding: 20px;
-  width: 70vw;
+  width: 80vw;
 }
 
 .tools-container > .swiper-container .slidercontrols {
@@ -410,6 +425,7 @@ header {
     width: 50%;
   }
   .tools-container > .swiper-container {
+    position: relative;
     height: 600px;
     width: 85vw;
   }

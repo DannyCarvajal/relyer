@@ -93,10 +93,11 @@ header {
 
     // Slider General Container
     .swiper-container {
+        position: relative;
         height: 527px;
         margin-top: 0px;
         padding: 20px;
-        width: 90vw;
+        width: 100vw;
 
         .slidercontrols {
             color: white;
@@ -181,6 +182,10 @@ header {
 .tools-container {
 
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &>img {
         position: absolute;
@@ -217,10 +222,11 @@ header {
 
     // Slider General Container
     &>.swiper-container {
+        position: relative;
         height: 450px;
         margin-top: 20px;
         padding: 20px;
-        width: 70vw;
+        width: 80vw;
 
         .slidercontrols {
             color: black;
@@ -232,6 +238,7 @@ header {
         &>.swiper-wrapper {
             max-width: 25vw;
             margin-bottom: 40px;
+            // width: 100vw;
 
             &>.swiper-slide {
                 display: flex;
@@ -359,6 +366,7 @@ header {
         }
 
         &>.swiper-container {
+            position: relative;
             height: 600px;
             width: 85vw;
 

@@ -197,11 +197,7 @@ submitTest.addEventListener("click", async () => {
 		let arrayTemp = [];
 		let guardar = false;
 		validation.forEach(value => {
-			if (
-				(value.type == "checkbox" && value.checked && value.value != "Otros") ||
-				(value.type == "radio" && value.checked && value.value != "Otros (Especifique)") ||
-				(value.type == "text" && !value.disabled && value.value)
-			) {
+			if ((value.type == "checkbox" && value.checked && value.value != "Otros") || (value.type == "radio" && value.checked && value.value != "Otros (Especifique)") || (value.type == "text" && !value.disabled && value.value)) {
 				arrayTemp.push(value.value);
 				score.push(value.id);
 				guardar = true;
