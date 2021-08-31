@@ -22,7 +22,7 @@ This was a project made by 5 students from Protalento https://protalento.org/ .S
 - https://www.linkedin.com/in/juan-jose-florez-rodriguez/
 - https://www.linkedin.com/in/santiagosalamancadev/
 - https://www.linkedin.com/in/alejandra-henao-espitia/
-- https://www.linkedin.com/in/daniel-carvajal-tsweetheart/
+- https://www.linkedin.com/in/oliver-daniel-carvajal/
 - https://www.linkedin.com/in/alejandro-villamil-carmona-2b6762219/
 
 > Thanks to the team and Protalento. We hope you like the project, Protalento helped us get on the tech path and we want to do the same with companies
