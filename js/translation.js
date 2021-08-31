@@ -16,3 +16,5 @@ englishButton.forEach(element => {
 		console.log(currentPage);
 	});
 });
+console.log(spanishButton);
+spanishButton.onclick = () => printMessage("#FFE1DE", "#FE455B", "Not available yet", "error");

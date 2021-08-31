@@ -1,6 +1,7 @@
 const loginButton = document.getElementsByClassName("login--desktop")[0];
 const loginButton2 = document.getElementsByClassName("login--mobile")[0];
 const loginIcon = document.getElementsByClassName("loginicon")[0];
+let spanishButton = document.getElementsByClassName("spanish");
 
 let logged = false;
 
@@ -26,3 +27,6 @@ function logOut() {
 		logged = false;
 	}
 }
+
+console.log(spanishButton);
+[...spanishButton].forEach(b => (b.onclick = () => printMessage("#FFE1DE", "#FE455B", "Not available yet", "error")));

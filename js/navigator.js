@@ -42,7 +42,7 @@ navTemplate.innerHTML = `
     <div class="centralnav__language--mobile">
         <img width="60" height="40" class="changelang__enflag changelang__lang selected"
             src="../assets/home/en-flag.svg" alt="United States flag">
-        <img width="60" height="40" class="changelang__enflag changelang__lang" src="../assets/home/es-flag.svg"
+        <img width="60" height="40" class="changelang__enflag changelang__lang spanish" src="../assets/home/es-flag.svg"
             alt="Spanish Flag">
     </div>
 </div>
@@ -63,7 +63,7 @@ navTemplate.innerHTML = `
         <h2 class="changelang__title">English</h2>
         <ul class="changelang__options">
             <li class="changelang__lang selected">English</li>
-            <li class="changelang__lang">Spanish</li>
+            <li class="changelang__lang spanish">Spanish</li>
         </ul>
     </div>
 </div>
